@@ -36,13 +36,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /* fadeInUp */
 
 @-webkit-keyframes fadeInUp {
-  0% {
+  100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
   }
   
   100% {
-    opacity: 1;
+    opacity: 100;
     -webkit-transform: translateY(0);
   }
 }
