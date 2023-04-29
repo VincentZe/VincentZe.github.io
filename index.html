@@ -1,394 +1,1302 @@
-<!DOCTYPE html>
-<!--[if lte IE 8 ]>
-<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <!--
-***************  *      *     *
-      8          *    *       *
-      8          *  *         *
-      8          **           *
-      8          *  *         *
-      8          *    *       *
-      8          *      *     *
-      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+ * @Descripttion: 
+ * @version: 
+ * @Author: ShowE
+ * @Date: 2021-07-07 12:04:10
+ * @LastEditors: ShowE
+ * @LastEditTime: 2023-04-29 05:11:22
 -->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>OvO</title>
-  <!-- Meta data -->
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="OvO">
-    <meta name="author" content="John Doe">
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <title>2023 个人作品集</title>
 
-    <!-- Favicon, (keep icon in root folder) -->
-    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="ShowE's Showreel">
+    <meta name="author" content="ShowE">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
-    <link rel="alternate" href="/atom.xml" title="OvO" type="application/atom+xml">
-    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
-    
-    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
-    
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
 
-    <!--[if IE 8]>
-    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
-    <![endif]-->
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-gymso-style.css">
 
-    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
-    <script src="/js/jquery-1.11.1.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/swiper-bundle.min.js"> </script>
+    <!-- Command & Conquer Red Alert 3 -->
 
-    <!-- Load these in the <head> for quicker IE8+ load times -->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="/js/html5shiv.min.js"></script>
-    <script src="/js/respond.min.js"></script>
-    <![endif]-->
-
-  
-  
-  
-
-  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
 </head>
 
-<!--
-<body class="home-template">
--->
-<body id="index" class="lightnav animsition">
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
-      <!-- ============================ Off-canvas navigation =========================== -->
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
 
-    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
-        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
-            <img src="/img/close.png" alt="Close"/>
-        </div>
-        <!-- Lists in Slidebars -->
-        <ul class="sb-menu">
-            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
-            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
-            <!-- Dropdown Menu -->
-			 
-            <li>
-                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
-                <ul class="sb-submenu">
-                    
-                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
-                    
-                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
-                    
+            <!-- <a class="navbar-brand" href="index.html">Gymso Fitness</a> -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link smoothScroll"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#class" class="nav-link smoothScroll">三维静帧/动画</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#effect" class="nav-link smoothScroll">特效/图形动画</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">插画/动态壁纸</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">编程相关</a>
+                    </li>
                 </ul>
-            </li>
-            
-            
-            
-            <li>
-                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
-                <ul class="sb-submenu">
-                    
-                    <li><a href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
-                    
-                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
-                    
-                </ul>
-            </li>
-            
-        </ul>
-        <!-- Lists in Slidebars -->
-        <ul class="sb-menu secondary">
-            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
-            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
-        </ul>
-    </div>
-    
-    <!-- ============================ END Off-canvas navigation =========================== -->
-
-    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
-
-    <div id="sb-site">
-        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
-
-        <!-- ============================ Header & Logo bar =========================== -->
-
-        <div id="navigation" class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <!-- Nav logo -->
-                    <div class="logo">
-                        <a href="/" title="Logo" class="animsition-link">
-                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
-                        </a>
-                    </div>
-                    <!-- // Nav logo -->
-                    <!-- Info-bar -->
-                    <nav>
-                        <ul class="nav">
-                            <li><a href="/" class="animsition-link">OvO</a></li>
-                            <li class="nolink"><span>Always </span>Creative.</li>
-                            
-                            <li><a href="https://github.com/VincentZe" title="Github" target="_blank"><i class="icon-github"></i></a></li>
-                            
-                            
-                            
-                            
-                            
-                            <li class="nolink"><span>Welcome!</span></li>
-                        </ul>
-                    </nav>
-                    <!--// Info-bar -->
-                </div>
-                <!-- // .container -->
-                <div class="learnmore sb-toggle-right">More</div>
-                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar before"></span>
-                <span class="icon-bar main"></span>
-                <span class="icon-bar after"></span>
-                </button>
+                <!-- <ul class="social-icon ml-lg-3">
+                    <li><a href="https://fb.com/tooplate" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                </ul> -->
             </div>
-            <!-- // .navbar-inner -->
+
         </div>
+    </nav>
 
-        <!-- ============================ Header & Logo bar =========================== -->
 
+    <!-- HERO -->
+    <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
 
-      <!-- ============================ Hero Image =========================== -->
+        <div class="align-items-left"
+            style="width: 100%;height: 100%;object-fit: cover;position: absolute;overflow: hidden;">
+            <video id="vedioSize" src="./images/Showreel/LengKai.webm"
+                style="height: 100%; object-fit: cover;position: absolute;top: 30px;" autoplay="autoplay" loop="loop"
+                muted="muted"></video>
+        </div>
+        <div class="bg-overlay"></div>
 
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2><font color=#FFFFFF size=15 face="黑体">ARE YOU LIVING YOUR LIFE</font></h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p></p>
-                        
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-md-10 mx-auto col-12">
+                    <div class="hero-text mt-5 text-center">
+
+                        <h6 data-aos="fade-up" data-aos-delay="300">推荐使用PC端查看 </h6>
+                        <h6 data-aos="fade-up" data-aos-delay="300">本页面多处可横向滑动</h6>
+                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">2023 个人作品集</h1>
+
+                        <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">继续↓</a>
+                        <!-- 
+                        <a href="https://gitee.com/showEv/interactive-demonstrate-app/raw/master/images/2021.07.16Showreel.zip" download="个人作品集.zip"
+                            class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">下载作品集压缩包</a> -->
+                        <!-- <a href="#contact" class="btn custom-btn bordered mt-3" data-aos="fade-up"
+                            data-aos-delay="700">网页端的三维交互程序</a> -->
+                        <a href="./bud.html" class="btn custom-btn bordered mt-3" data-aos="fade-up"
+                            data-aos-delay="700">2022~2023</a>
+                        <p class="mt-5" style="margin-top: 0!important" data-aos="fade-up" data-aos-delay="700">本网页资源较多，可能有的时候图片、视频加载不出，刷新页面即可</p>
+                        <p class="mt-5" data-aos="fade-up" data-aos-delay="700">浏览器版本较低可能导致页面显示不全或错误</p>
 
                     </div>
                 </div>
             </div>
-            <!-- // .col-md-12 -->
         </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
+    </section>
 
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
 
-<!-- ============================ END Hero Image =========================== -->
-<!-- ============================ Content =========================== -->
+    <section class="feature" id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12 text-center">
+                    <div class="about-working-hours">
+                        <div>
 
-<section id="intro">
-    <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/02/02/welcom/">welcom</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2017-02-02T14:05:41.000Z" itemprop="datePublished">
-          2017-02-02
-      </time>
-    
-</span>
-                    </span>
+                            <h2 class="mb-4 text-white" data-aos="fade-right" data-aos-delay="200">三维静帧 / 动画</h2>
+                            <div class="" data-aos="fade-right" data-aos-delay="200">
+                                <div class="class-thumb">
+                                    <video src="images/Showreel/StarEngine_1.webm" class="img-fluid"
+                                        style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
+                                        loop="loop" muted="muted"></video>
+                                </div>
+                                <div class="team-info d-flex flex-column p-0">
+                                    <a href="#class" class="btn custom-btn bg-color" style="font-size: large;">查看更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        我们来创造一些神奇的东西吧 OvOA~欢迎来到这里，这里是…
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/02/02/welcom/">进去看看...</a>
-                    </p>
-                    
+                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12 text-center">
+                    <div class="about-working-hours">
+                        <div>
+
+                            <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="300">特效 / 图形动画</h2>
+                            <div class="" data-aos="fade-up" data-aos-delay="300">
+                                <div class="class-thumb">
+                                    <video src="images/Showreel/electri.webm" class="img-fluid"
+                                        style="object-fit:cover; height: 300px;width: 100%; display: block;"
+                                        autoplay="autoplay" loop="loop" muted="muted"></video>
+                                </div>
+                                <div class="team-info d-flex flex-column p-0">
+                                    <a href="#effect" class="btn custom-btn bg-color" style="font-size: large;">查看更多</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12 text-center">
+                    <div class="about-working-hours">
+                        <div>
+                            <h2 class="mb-4 text-white" data-aos="fade-left" data-aos-delay="100">插画 / 动态插画</h2>
+
+                            <div class="" data-aos="fade-left" data-aos-delay="100">
+                                <div class="class-thumb" style="overflow: hidden;">
+                                    <div class="" style="width:500px;height: 300px;">
+                                        <video id="vedioSize" src="./images/Showreel/LengKai.webm"
+                                            style="height: 120%; object-fit: cover;" autoplay="autoplay" loop="loop"
+                                            muted="muted"></video>
+                                    </div>
+                                    <!-- <video src="./images/Showreel/LengKai.webm" class="img-fluid"
+                                        style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
+                                        loop="loop" muted="muted"></video> -->
+                                </div>
+                                <div class="team-info d-flex flex-column p-0">
+                                    <a href="#about" class="btn custom-btn bg-color" style="font-size: large;">查看更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/01/31/好用吗/">好用吗</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2017-01-31T12:22:33.000Z" itemprop="datePublished">
-          2017-01-31
-      </time>
-    
-</span>
-                    </span>
+    </section>
+
+
+    <!-- CLASS -->
+
+
+    <!-- ABOUT -->
+    <section class="about section" style="z-index: -1;background-color: #1A181B;" id="">
+        <div class="showrell">
+            <div class="swiper-container " style="height: 600px;" data-aos="fade-left" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="100">自然环境地编-UE4- 2021.8</h2>
+                            </div>
+                        </div>
+                        <img class="kandy " src="./images/Showreel/Forest.jpg">
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="200">自然环境地编-UE4- 2021.8</h2>
+                            </div>
+                        </div>
+                        <img class="kandy " src="./images/Showreel/RoadTrip.jpg">
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">古城场景-C4D- 2021.9</h2>
+                            </div>
+                        </div>
+                        <img class="kandy " src="./images/Showreel/AncientChina.jpg">
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="400">自动字形散布-Houdini- 2021.9</h2>
+                            </div>
+                        </div>
+                        <img class="kandy " src="./images/Showreel/HoudiniScatter.jpg">
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="400">汽车高模-Blender- 2021.7</h2>
+                            </div>
+                        </div>
+                        <img class="kandy " src="./images/Showreel/C74KF.jpg">
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="400">汽车高模-Blender- 2021.7</h2>
+                            </div>
+                        </div>
+                        <img class="kandy " src="./images/Showreel/C74KB.jpg">
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="400">抽象图形-C4D- 2018.3</h2>
+                            </div>
+                        </div>
+                        <img class="kandy " src="./images/Showreel/cube.jpg">
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="400">抽象图形-C4D- 2018.6</h2>
+                            </div>
+                        </div>
+                        <img class="kandy " src="./images/Showreel/tri.jpg">
+                    </div>
+
                 </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/01/31/好用吗/">进去看看...</a>
-                    </p>
-                    
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+
+                <div class="mt-lg-0 mt-5 mb-5 mb-lg-0 mb-5 mb-lg-5 mb-md-4 col-12 placeholder" style="height: 400px;">
                 </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <div class="mt-lg-4 mt-5 mb-lg-0 mb-0 ml-lg-6 ml-md-8 ml-8 col-12">
+                    <div class="team-info">
+                        <h2 class="mb-2" data-aos="fade-up" data-aos-delay="200">三维静帧</h2>
+                        <p data-aos="fade-up" data-aos-delay="300">
+                            包含场景地编和建模，深耕渲染和硬表面建模多年，了解光栅化和离线渲染特点，并搭建符合需求的场景。
+                        </p>
+                        <!-- <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow"
+                                href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML
+                                template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact"
+                                target="_parent">contact Tooplate</a> immediately. Thank you.</p> -->
+                    </div>
+                </div>
+    </section>
+    <section class="class section"
+        style="background-image: url(./images/Showreel/carbonpiep.jpg);object-fit: cover; background-size: cover; background-repeat:no-repeat;background-position: center;overflow: hidden;"
+        id="class">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-lg-12 col-12 text-center mb-5">
+                    <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">三维动画</h2>
+                </div>
+
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2017/01/31/找乐子/">找乐子</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2017-01-31T05:17:19.000Z" itemprop="datePublished">
-          2017-01-31
-      </time>
-    
-</span>
-                    </span>
+        <div class="showrell">
+            <!-- <div class="col-lg-10 col-md-10 col-12" style="position: relative;top:-7rem;z-index: 0;"> -->
+            <!-- style="width:100%;height: 600px;object-fit: cover;position: absolute;left: 0;top: 0;" -->
+
+            <div class="swiper-container2 " data-aos="fade-left" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="my-slide col-12 col-lg-4">
+
+                        <div class="mt-5 mt-lg-5 col-lg-12 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
+                            <div class="class-thumb">
+                                <video src="./images/Showreel/Engines.webm" class="img-fluid "
+                                    style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
+                                    loop="loop" muted="muted"></video>
+                                <div class="class-info">
+                                    <h3 class="mb-1">发动机绑定</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-slide col-12 col-lg-4">
+
+                        <div class="mt-5 mt-lg-5 col-lg-12 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                            <div class="class-thumb">
+                                <video src="./images/Showreel/Engine.webm" class="img-fluid "
+                                    style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
+                                    loop="loop" muted="muted"></video>
+                                <div class="class-info">
+                                    <h3 class="mb-1">复杂的机械绑定</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-slide col-12 col-lg-4">
+
+                        <div class="mt-5 mt-lg-5 col-lg-12 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+                            <div class="class-thumb">
+                                <video src="./images/Showreel/train.webm" class="img-fluid "
+                                    style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
+                                    loop="loop" muted="muted"></video>
+                                <div class="class-info">
+                                    <h3 class="mb-1">火车联动结构绑定</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-slide col-12 col-lg-4">
+
+                        <div class="mt-5 mt-lg-5 col-lg-12 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+                            <div class="class-thumb">
+                                <video src="./images/Showreel/StarEngine_1.webm" class="img-fluid "
+                                    style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
+                                    loop="loop" muted="muted"></video>
+                                <div class="class-info">
+                                    <h3 class="mb-1">星型发动机透视</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="my-slide col-12 col-lg-4">
+
+                        <div class="mt-5 mt-lg-5 col-lg-12 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                            <div class="class-thumb">
+                                <video src="./images/Showreel/earth.webm" class="img-fluid "
+                                    style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
+                                    loop="loop" muted="muted"></video>
+                                <div class="class-info">
+                                    <h3 class="mb-1">地图展开动画</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        认识 后来 不认识了
+                <!-- <div class="swiper-scrollbar"></div> -->
 
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2017/01/31/找乐子/">进去看看...</a>
-                    </p>
-                    
+            </div>
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+            <!-- 如果需要滚动条 -->
+
+        </div>
+        <div class="container mb-0">
+            <div class="row">
+
+                <div class="col-lg-12 col-12 text-center mb-0">
+
+                    <!-- <div class="mt-lg-4 mt-5 mb-lg-0 mb-0 ml-lg-6 ml-md-8 ml-8 col-12">
+                    <div class="team-info">
+                        <h2 class="mb-2" data-aos="fade-up" data-aos-delay="200">三维动画</h2>
+                        <p data-aos="fade-up" data-aos-delay="300">
+                            自高中开始对视频制作感兴趣，并逐步了解到AE等视频制作软件，如今AE已经成为我最了解的软件之一。在大学期间最常使用AE制作委托的动画部分，偶尔也做一些2D特效来玩。
+                            因为制作的视频大多不长，AE也接手了我所有的视频剪辑需求。
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="300">
+                            就在上个月，朋友所在的公司突然有了AE熟手的需求，来询问我后 我便临时加入到了他们的外包项目当中。
+                            期间为了完成甲方多轮意见会议的指标，曾多次和组长加班到凌晨。历时两个星期，最终提交了项目得到了甲方和朋友老板的肯定。
+                        </p>
+                    </div>
+                </div> -->
+                    <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">三维静帧</h2>
                 </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+            </div>
+
+    </section>
+    <section class="about section" style="z-index: -1;background-color: #1A181B;" id="effect">
+
+        <div class="showrell">
+            <!-- <div class="col-lg-10 col-md-10 col-12" style="position: relative;top:-7rem;z-index: 0;"> -->
+            <!-- style="width:100%;height: 600px;object-fit: cover;position: absolute;left: 0;top: 0;" -->
+            <div class="swiper-container " style="height: 600px;" data-aos="fade-left" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="100">Logo演绎 2020.7</h2>
+                            </div>
+                        </div>
+                        <video class="kandy " src="./images/Showreel/ShowE_BlackWood_Logo_v2.webm" autoplay="autoplay"
+                            loop="loop" muted="muted"></video>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">2D特效 2018.1</h2>
+                            </div>
+                        </div>
+                        <video class="kandy " src="./images/Showreel/electri.webm" autoplay="autoplay" loop="loop"
+                            muted="muted"></video>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">节目插屏 2018.2</h2>
+                            </div>
+                        </div>
+                        <video class="kandy " src="./images/Showreel/NWSPS.webm" autoplay="autoplay" loop="loop"
+                            muted="muted"></video>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">节目Logo演绎 2018.2</h2>
+                            </div>
+                        </div>
+                        <video class="kandy " src="./images/Showreel/NWS.webm" autoplay="autoplay" loop="loop"
+                            muted="muted"></video>
+                    </div>
+                    
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="200">闪电 2017.8</h2>
+                            </div>
+                        </div>
+                        <img class="kandy " src="./images/Showreel/lightingbeam_49.jpg">
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="kandy" style="width: 960px;">
+                            <div class="row justify-content-center">
+                                <h1 id="placeholder2" class="mb-2col-12 text-white" data-aos="fade-up"
+                                    data-aos-delay="100">
+                                    &nbsp;
+                                </h1>
+                                <h1 class="mb-2 mt-5 col-12 text-white" data-aos="fade-up" data-aos-delay="100">
+                                    字节跳动旗下
+                                </h1>
+                                <h2 class="mb-2 mt-2 col-12 text-white" data-aos="fade-up" data-aos-delay="300">
+                                    大力教育《瓜瓜龙启蒙》项目外包
+                                </h2>
+                                <p class=" col-12 text-white" data-aos="fade-up" data-aos-delay="400">
+                                    2021年6月末到7月初担任&nbsp;
+                                    <span class="strong"
+                                        style="color: #f13a11;display: inline-block;font-weight: bold;">环境动画</span>
+                                </p>
+                                <p class=" col-12 text-white" data-aos="fade-up" data-aos-delay="400">
+                                    受限于保密协议无法展示
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">C4D X-Particles制作
+                                </h2>
+                            </div>
+                        </div>
+                        <img class="kandy " src="./images/Showreel/xp.jpg">
+                    </div> -->
+                </div>
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+            <!-- 如果需要滚动条 -->
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+
+                <div class="mt-lg-0 mt-5 mb-5 mb-lg-0 mb-5 mb-lg-5 mb-md-4 col-12 placeholder" style="height: 400px;">
+                </div>
+                <div class="mt-lg-4 mt-5 mb-lg-0 mb-0 ml-lg-6 ml-md-8 ml-8 col-12">
+                    <div class="team-info">
+                        <h2 class="mb-2" data-aos="fade-up" data-aos-delay="200">特效 / 图形动画</h2>
+                        <p data-aos="fade-up" data-aos-delay="300">
+                            自高中开始对影视技术感兴趣，并逐步了解到AE等视频制作软件，如今AE已经成为我最了解的软件之一。在大学期间最常使用AE制作委托的动画部分，偶尔也做一些2D特效。
+                            因为制作的视频大多不长，AE也接手了我所有的视频剪辑需求。
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="300">
+                            2021年6月，朋友所在的公司突然有了AE熟手的需求，来询问我后 我便临时加入到了他们的外包项目当中。
+                            期间完成了甲方多轮意见会议的指标。历时两个星期，最终提交了项目得到了甲方和朋友老板的肯定。
+                        </p>
+                        <!-- <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow"
+                                href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML
+                                template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact"
+                                target="_parent">contact Tooplate</a> immediately. Thank you.</p> -->
+                    </div>
+                </div>
+                <!-- 
+                <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up"
+                    data-aos-delay="800">
+                    <div class="team-thumb">
+                        <img src="images/team/team-image01.jpg" class="img-fluid" alt="Trainer">
+
+                        <div class="team-info d-flex flex-column">
+
+                            <h3>Catherina</h3>
+                            <span>Body trainer</span>
+
+                            <ul class="social-icon mt-3">
+                                <li><a href="#" class="fa fa-instagram"></a></li>
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+
             </div>
         </div>
-        
-        <nav class="pagination" role="pagination">
-          
-          
-        </nav>
-    </div>
-</section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>你很棒的呦</p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+    </section>
 
-      
-<!-- ============================ Footer =========================== -->
 
-<footer>
-    <div class="container">
-            <div class="copy">
-                <p>
-                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By John Doe. All Rights Reserved.
-                </p>
-                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+    <!-- ABOUT -->
+    <section class="about section" style="z-index: -1;background-color: #1A181B;" id="about">
+        <div class="showrell">
+            <!-- <div class="col-lg-10 col-md-10 col-12" style="position: relative;top:-7rem;z-index: 0;"> -->
+            <!-- style="width:100%;height: 600px;object-fit: cover;position: absolute;left: 0;top: 0;" -->
+
+            <div class="swiper-container " style="height: 600px;" data-aos="fade-left" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="100">Frozen 2020.7</h2>
+
+                                <p data-aos="fade-up" data-aos-delay="400">
+                                    私人委托。<a style="font-weight:bold;"
+                                        href="https://www.bilibili.com/video/BV1p54y167b8" target="_blank"
+                                        data-aos-delay="400">BV1p54y167b8</a></p>
+                            </div>
+
+                        </div>
+                        <video class="kandy " src="./images/Showreel/LengKai.webm" autoplay="autoplay" loop="loop"
+                            muted="muted"></video>
+                    </div>
+
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="100">好叶 2021.2</h2>
+
+                                <p data-aos="fade-up" data-aos-delay="400">
+                                    私人委托。
+                                </p>
+                            </div>
+
+                        </div>
+                        <video class="kandy " src="./images/Showreel/HowLeaf_RM 2AE_1_Loop8_22.webm" autoplay="autoplay" loop="loop"
+                            muted="muted"></video>
+                    </div>
+
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="200">蜘蛛战车</h2>
+
+                                <p class="text-white" data-aos="fade-up" data-aos-delay="400">
+                                    于2020年1月完成创作。为红色警戒3知名Mod日冕创作。灵感源于《看门狗1》中的一个数位旅程，起稿阶段使用Blender
+                                    GreasePencil功能进行辅助</p>
+                            </div>
+
+                        </div>
+                        <img class="kandy " src="./images/Showreel/SpiderTank.jpg">
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="description">
+                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
+                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">近期练习</h2>
+                            </div>
+
+                        </div>
+                        <img class="kandy " src="./images/Showreel/Machine.jpg">
+                    </div>
+
+                </div>
+                <!-- <div class="swiper-scrollbar"></div> -->
+
             </div>
-            <div class="social">
-                <ul>
-                    
-                    <li><a href="https://github.com/VincentZe" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
-                    
-                    
-                    
-                    
-                    
-                </ul>
-            </div>
-            <div class="clearfix"> </div>
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+            <!-- 如果需要滚动条 -->
+
         </div>
-</footer>
 
-<!-- ============================ END Footer =========================== -->
-      <!-- Load our scripts -->
-<!-- Resizable 'on-demand' full-height hero -->
-<script type="text/javascript">
-    var resizeHero = function () {
-        var hero = $(".cover,.heightblock"),
-            window1 = $(window);
-        hero.css({
-            "height": window1.height()
-        });
-    };
-
-    resizeHero();
-
-    $(window).resize(function () {
-        resizeHero();
-    });
-</script>
-<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
-<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
-<script src="/js/scripts.js"></script><!-- Theme scripts -->
+        <div class="container">
+            <div class="row">
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-$('#intro').find('img').each(function(){
-  var alt = this.alt;
+                <div class="mt-lg-0 mt-5 mb-5 mb-lg-0 mb-5 mb-lg-5 mb-md-4 col-lg-8 col-md-8 col-12 placeholder">
+                </div>
+                <div class="mt-lg-4 mt-5 mb-lg-0 mb-0 ml-lg-6 ml-md-8 ml-8 col-lg-4 col-md-4 col-12">
+                    <div class="team-info img-fluid">
+                        <h2 class="mb-2" data-aos="fade-up" data-aos-delay="300">插画 / 动态插画</h2>
 
-  if (alt){
-    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
-  }
+                        <p data-aos="fade-up" data-aos-delay="400">
+                            自幼学习画画，高二开始自学数字绘画，高考后进入计算机相关专业。虽没有经历过应试美术和科班教育的试炼，但<a style="font-weight:bold;"
+                                href="javascript:void(0);" data-aos-delay="400">基本功扎实</a></p>
+                        <p data-aos="fade-up" data-aos-delay="500">自大学期间开始接受国内外私人委托，广泛涉猎业界大佬的作品，不断尝试新的技法，作品的完成度不断迈向更高台阶。
+                        </p>
 
-  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
-});
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
 
-<!-- Initiate flexslider plugin -->
-<script type="text/javascript">
-    $(document).ready(function($) {
-      (function(){
-        console.log('font');
-        var getCss = function(path) {
-          var head = document.getElementsByTagName('head')[0];
-          link = document.createElement('link');
-          link.href = path;
-          link.rel = 'stylesheet';
-          link.type = 'text/css';
-          head.appendChild(link);
-        };
-        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
-      })();
-      $('.flexslider').flexslider({
-        animation: "fade",
-        prevText: "",
-        nextText: "",
-        directionNav: true
-      });
-    });
-</script>
+                        <!-- <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow"
+                                href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML
+                                template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact"
+                                target="_parent">contact Tooplate</a> immediately. Thank you.</p> -->
+                    </div>
 
-</body>
+
+                </div>
+                <!-- 
+                <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up"
+                    data-aos-delay="800">
+                    <div class="team-thumb">
+                        <img src="images/team/team-image01.jpg" class="img-fluid" alt="Trainer">
+
+                        <div class="team-info d-flex flex-column">
+
+                            <h3>Catherina</h3>
+                            <span>Body trainer</span>
+
+                            <ul class="social-icon mt-3">
+                                <li><a href="#" class="fa fa-instagram"></a></li>
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SCHEDULE -->
+    <section class="schedule section" id="schedule">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12 text-center">
+
+                    <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">关于软件</h2>
+                    <!-- <h6 data-aos="fade-up">Blender AE PS 用的最多 也最熟悉</h6> -->
+
+                </div>
+
+                <div class="col-lg-12 py-5 col-md-12 col-12">
+                    <table class="table table-bordered table-responsive schedule-table">
+
+                        <tbody>
+                            <tr data-aos="fade-up" data-aos-delay="300">
+                                <td>
+                                    <h3>亲儿子级</h3>
+
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/blender_icon.png" alt="">
+                                    <span>Blender</span>
+                                </td>
+
+                                <td>
+                                    <img src="images/Softwares/aftereffects.png" alt="">
+                                    <span>After Effects</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/Photoshop.png" alt="">
+                                    <span>Photoshop</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/sai-icon.png" alt="">
+                                    <span>Sai</span>
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            <tr data-aos="fade-up" data-aos-delay="300">
+                                <td>
+                                    <h3>熟悉</h3>
+
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/Substance_Designer_Icon.png" alt="">
+                                    <span>Substance</span>
+                                    <span>Designer</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/Substance_Painter_Icon.png" alt="">
+                                    <span>Substance</span>
+                                    <span>Painter</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/Unreal-symbol.png" alt="">
+                                    <span>Unreal</span>
+                                    <span>Engine</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/unity-logo-white.png" alt="">
+                                    <span>Unity</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/zBrush3.png" alt="">
+                                    <span>Zbrush</span>
+                                </td>
+                            </tr>
+
+                            <tr data-aos="fade-up" data-aos-delay="400">
+                                <td>
+                                    <h3>偶尔一用</h3>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/maya.png" alt="">
+                                    <span>Maya</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/3dsmax-20172.png" alt="">
+                                    <span>Max</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/MXN-C4D-icon.png" alt="">
+                                    <span>C4D</span>
+                                </td>
+
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto col-11">
+                    <h1 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">编程相关</h1>
+                    <p class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="400">
+                        常用C#、Python，了解BPY、Unity工具类API。主要应用于Blender和Unity的插件、脚本。写过HLSL、Unity后处理、大致了解PBR原理、渲染管线以及一些基本的图形学知识。可以在2022-2023作品集中查看具体的实践结果。
+                    </p>
+                    <p class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="400">
+                        在学校的时候已经写过很多次Web项目了(带数据库前后端分离)，web常用的都了解，是个人最擅长写的一种项目了，但和我面试的岗位距离太远了，就不多说了。下面是一些因我个人需求诞生的作品吧。
+                    </p>
+                </div>
+
+                <div class="ml-auto col-lg-5 col-md-6 col-12">
+                    <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">SAI2录屏工具</h2>
+                    <p data-aos="fade-up" data-aos-delay="400">
+                        以前常做绘画延时录像的视频，像Procreat和ClipPaint都可以很轻松的导出录像。
+                        而SAI只能外录，效果差很多。所以怀着这个小目标，我写了这个程序。</p>
+                    <p data-aos="fade-up" data-aos-delay="400">
+                        也是第一次学习Windows逆向相关的内容，在过去的两年里我慢慢地优化和完善了它。
+                        现在SAI也可以像Procreat那样轻松地导出绘画延时视频了。以下为一段SAI的绘画延时录像</p>
+                    <p data-aos="fade-up" data-aos-delay="400">
+                        可以在<a style="font-weight:bold;" href="https://www.bilibili.com/video/BV1Ai4y157n4"
+                            data-aos-delay="400" target="_blank">这里</a>找到并使用它</p>
+                    <video src="./images/Showreel/Timelapse.webm" data-aos="fade-up" data-aos-delay="400"
+                        style="width: 100%;" autoplay="autoplay" loop="loop" muted="muted"></video>
+                </div>
+
+                <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12" id="3dbox">
+                    <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Web端三维交互演示程序</h2>
+
+                    <p data-aos="fade-up" data-aos-delay="400">基于three.js，TypeScript编写，点击黑框可展开菜单。鼠标左键旋转视角，中键缩放视角，右键平移视角。
+                        手机端使用单指旋转视角，双指可平移缩放视角。</p>
+                    <p data-aos="fade-up" data-aos-delay="400">模型和动画来自于红色警戒3 仅作为演示用途</p>
+
+                    <div class="google-map" data-aos="fade-up" data-aos-delay="600" onContextMenu="return false">
+                        <div id="RA3" style="height: 400px;"> </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="ml-auto col-lg-4 col-md-5">
+                    <p class="copyright-text">Copyright &copy; 2021 ShowE
+
+                    </p>
+                </div>
+                <!-- 
+                <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                    <p class="mr-4">
+                        <i class="fa fa-envelope-o mr-1"></i>
+                        <a href="#">hello@company.co</a>
+                    </p>
+
+                    <p><i class="fa fa-phone mr-1"></i> 010-020-0840</p>
+                </div> -->
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h2 class="modal-title" id="membershipFormLabel">Membership Form</h2>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer"></div>
+
+            </div>
+        </div>
+    </div> -->
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // 垂直切换选项
+            effect: "coverflow",
+            slidesPerView: "auto",
+            centeredSlides: true,
+            autoplay: true,
+            // simulateTouch : false,
+            // mousewheel: true,
+            observer: true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true,//修改swiper的父元素时，自动初始化swiper
+            releaseOnEdges: true,
+            spaceBetween: 30,
+            // preventClicks : false,
+            slideToClickedSlide: true,
+            // loop: true, // 循环模式选项
+            loop: false,
+
+            // // 如果需要分页器
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
+
+            // // 如果需要前进后退按钮
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+            speed: 2000,
+            lazyLoading: true,
+            autoplay: {
+                delay: 5000,//1秒切换一次
+                disableOnInteraction: false,
+            },
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+        var mySwiper = new Swiper('.swiper-container2', {
+            direction: 'horizontal', // 垂直切换选项
+            slidesPerView: "auto",
+            observer: true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true,//修改swiper的父元素时，自动初始化swiper
+            centeredSlides: true,
+            autoplay: true,
+            // mousewheel: true,
+            lazyLoading: true,
+            // simulateTouch : false,
+            releaseOnEdges: true,
+            spaceBetween: 30,
+            // preventClicks : false,
+            slideToClickedSlide: true,
+            slideClass: 'my-slide',
+            loop: true, // 循环模式选项
+            speed: 2000,
+            autoplay: {
+                delay: 5000,//1秒切换一次
+                disableOnInteraction: false,
+            },
+            // // 如果需要分页器
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
+
+            // // 如果需要前进后退按钮
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+
+            // 如果需要滚动条
+        })
+        // mySwiper.scrollbar.$dragEl.css('background', '#ff6600');
+    </script>
+    <!-- <script>
+
+            (function (factory) {
+                if (typeof define === 'function' && define.amd) {
+                    // AMD. Register as an anonymous module.
+                    define(['jquery'], factory);
+                } else if (typeof module === 'object' && module.exports) {
+                    // CommonJS
+                    factory(require('jquery'));
+                } else {
+                    // Browser globals
+                    factory(jQuery);
+                }
+            }(function ($) {
+
+                var version = '2.2.0';
+                var optionOverrides = {};
+                var defaults = {
+                    exclude: [],
+                    excludeWithin: [],
+                    offset: 0,
+
+                    // one of 'top' or 'left'
+                    direction: 'top',
+
+                    // if set, bind click events through delegation
+                    //  supported since jQuery 1.4.2
+                    delegateSelector: null,
+
+                    // jQuery set of elements you wish to scroll (for $.smoothScroll).
+                    //  if null (default), $('html, body').firstScrollable() is used.
+                    scrollElement: null,
+
+                    // only use if you want to override default behavior
+                    scrollTarget: null,
+
+                    // automatically focus the target element after scrolling to it
+                    autoFocus: false,
+
+                    // fn(opts) function to be called before scrolling occurs.
+                    // `this` is the element(s) being scrolled
+                    beforeScroll: function () { },
+
+                    // fn(opts) function to be called after scrolling occurs.
+                    // `this` is the triggering element
+                    afterScroll: function () { },
+
+                    // easing name. jQuery comes with "swing" and "linear." For others, you'll need an easing plugin
+                    // from jQuery UI or elsewhere
+                    easing: 'swing',
+
+                    // speed can be a number or 'auto'
+                    // if 'auto', the speed will be calculated based on the formula:
+                    // (current scroll position - target scroll position) / autoCoeffic
+                    speed: 400,
+
+                    // coefficient for "auto" speed
+                    autoCoefficient: 2,
+
+                    // $.fn.smoothScroll only: whether to prevent the default click action
+                    preventDefault: true
+                };
+
+                var getScrollable = function (opts) {
+                    var scrollable = [];
+                    var scrolled = false;
+                    var dir = opts.dir && opts.dir === 'left' ? 'scrollLeft' : 'scrollTop';
+
+                    this.each(function () {
+                        var el = $(this);
+
+                        if (this === document || this === window) {
+                            return;
+                        }
+
+                        if (document.scrollingElement && (this === document.documentElement || this === document.body)) {
+                            scrollable.push(document.scrollingElement);
+
+                            return false;
+                        }
+
+                        if (el[dir]() > 0) {
+                            scrollable.push(this);
+                        } else {
+                            // if scroll(Top|Left) === 0, nudge the element 1px and see if it moves
+                            el[dir](1);
+                            scrolled = el[dir]() > 0;
+
+                            if (scrolled) {
+                                scrollable.push(this);
+                            }
+                            // then put it back, of course
+                            el[dir](0);
+                        }
+                    });
+
+                    if (!scrollable.length) {
+                        this.each(function () {
+                            // If no scrollable elements and <html> has scroll-behavior:smooth because
+                            // "When this property is specified on the root element, it applies to the viewport instead."
+                            // and "The scroll-behavior property of the … body element is *not* propagated to the viewport."
+                            // → https://drafts.csswg.org/cssom-view/#propdef-scroll-behavior
+                            if (this === document.documentElement && $(this).css('scrollBehavior') === 'smooth') {
+                                scrollable = [this];
+                            }
+
+                            // If still no scrollable elements, fall back to <body>,
+                            // if it's in the jQuery collection
+                            // (doing this because Safari sets scrollTop async,
+                            // so can't set it to 1 and immediately get the value.)
+                            if (!scrollable.length && this.nodeName === 'BODY') {
+                                scrollable = [this];
+                            }
+                        });
+                    }
+
+                    // Use the first scrollable element if we're calling firstScrollable()
+                    if (opts.el === 'first' && scrollable.length > 1) {
+                        scrollable = [scrollable[0]];
+                    }
+
+                    return scrollable;
+                };
+
+                var rRelative = /^([\-\+]=)(\d+)/;
+
+                $.fn.extend({
+                    scrollable: function (dir) {
+                        var scrl = getScrollable.call(this, { dir: dir });
+
+                        return this.pushStack(scrl);
+                    },
+                    firstScrollable: function (dir) {
+                        var scrl = getScrollable.call(this, { el: 'first', dir: dir });
+
+                        return this.pushStack(scrl);
+                    },
+
+                    smoothScroll: function (options, extra) {
+                        options = options || {};
+
+                        if (options === 'options') {
+                            if (!extra) {
+                                return this.first().data('ssOpts');
+                            }
+
+                            return this.each(function () {
+                                var $this = $(this);
+                                var opts = $.extend($this.data('ssOpts') || {}, extra);
+
+                                $(this).data('ssOpts', opts);
+                            });
+                        }
+
+                        var opts = $.extend({}, $.fn.smoothScroll.defaults, options);
+
+                        var clickHandler = function (event) {
+                            var escapeSelector = function (str) {
+                                return str.replace(/(:|\.|\/)/g, '\\$1');
+                            };
+
+                            var link = this;
+                            var $link = $(this);
+                            var thisOpts = $.extend({}, opts, $link.data('ssOpts') || {});
+                            var exclude = opts.exclude;
+                            var excludeWithin = thisOpts.excludeWithin;
+                            var elCounter = 0;
+                            var ewlCounter = 0;
+                            var include = true;
+                            var clickOpts = {};
+                            var locationPath = $.smoothScroll.filterPath(location.pathname);
+                            var linkPath = $.smoothScroll.filterPath(link.pathname);
+                            var hostMatch = location.hostname === link.hostname || !link.hostname;
+                            var pathMatch = thisOpts.scrollTarget || (linkPath === locationPath);
+                            var thisHash = escapeSelector(link.hash);
+
+                            if (thisHash && !$(thisHash).length) {
+                                include = false;
+                            }
+
+                            if (!thisOpts.scrollTarget && (!hostMatch || !pathMatch || !thisHash)) {
+                                include = false;
+                            } else {
+                                while (include && elCounter < exclude.length) {
+                                    if ($link.is(escapeSelector(exclude[elCounter++]))) {
+                                        include = false;
+                                    }
+                                }
+
+                                while (include && ewlCounter < excludeWithin.length) {
+                                    if ($link.closest(excludeWithin[ewlCounter++]).length) {
+                                        include = false;
+                                    }
+                                }
+                            }
+
+                            if (include) {
+                                if (thisOpts.preventDefault) {
+                                    event.preventDefault();
+                                }
+
+                                $.extend(clickOpts, thisOpts, {
+                                    scrollTarget: thisOpts.scrollTarget || thisHash,
+                                    link: link
+                                });
+
+                                $.smoothScroll(clickOpts);
+                            }
+                        };
+
+                        if (options.delegateSelector !== null) {
+                            this
+                                .off('click.smoothscroll', options.delegateSelector)
+                                .on('click.smoothscroll', options.delegateSelector, clickHandler);
+                        } else {
+                            this
+                                .off('click.smoothscroll')
+                                .on('click.smoothscroll', clickHandler);
+                        }
+
+                        return this;
+                    }
+                });
+
+                var getExplicitOffset = function (val) {
+                    var explicit = { relative: '' };
+                    var parts = typeof val === 'string' && rRelative.exec(val);
+
+                    if (typeof val === 'number') {
+                        explicit.px = val;
+                    } else if (parts) {
+                        explicit.relative = parts[1];
+                        explicit.px = parseFloat(parts[2]) || 0;
+                    }
+
+                    return explicit;
+                };
+
+                var onAfterScroll = function (opts) {
+                    var $tgt = $(opts.scrollTarget);
+
+                    if (opts.autoFocus && $tgt.length) {
+                        $tgt[0].focus();
+
+                        if (!$tgt.is(document.activeElement)) {
+                            $tgt.prop({ tabIndex: -1 });
+                            $tgt[0].focus();
+                        }
+                    }
+
+                    opts.afterScroll.call(opts.link, opts);
+                };
+
+                $.smoothScroll = function (options, px) {
+                    if (options === 'options' && typeof px === 'object') {
+                        return $.extend(optionOverrides, px);
+                    }
+                    var opts, $scroller, speed, delta;
+                    var explicitOffset = getExplicitOffset(options);
+                    var scrollTargetOffset = {};
+                    var scrollerOffset = 0;
+                    var offPos = 'offset';
+                    var scrollDir = 'scrollTop';
+                    var aniProps = {};
+                    var aniOpts = {};
+
+                    if (explicitOffset.px) {
+                        opts = $.extend({ link: null }, $.fn.smoothScroll.defaults, optionOverrides);
+                    } else {
+                        opts = $.extend({ link: null }, $.fn.smoothScroll.defaults, options || {}, optionOverrides);
+
+                        if (opts.scrollElement) {
+                            offPos = 'position';
+
+                            if (opts.scrollElement.css('position') === 'static') {
+                                opts.scrollElement.css('position', 'relative');
+                            }
+                        }
+
+                        if (px) {
+                            explicitOffset = getExplicitOffset(px);
+                        }
+                    }
+
+                    scrollDir = opts.direction === 'left' ? 'scrollLeft' : scrollDir;
+
+                    if (opts.scrollElement) {
+                        $scroller = opts.scrollElement;
+
+                        if (!explicitOffset.px && !(/^(?:HTML|BODY)$/).test($scroller[0].nodeName)) {
+                            scrollerOffset = $scroller[scrollDir]();
+                        }
+                    } else {
+                        $scroller = $('html, body').firstScrollable(opts.direction);
+                    }
+
+                    // beforeScroll callback function must fire before calculating offset
+                    opts.beforeScroll.call($scroller, opts);
+
+                    scrollTargetOffset = explicitOffset.px ? explicitOffset : {
+                        relative: '',
+                        px: ($(opts.scrollTarget)[offPos]() && $(opts.scrollTarget)[offPos]()[opts.direction]) || 0
+                    };
+
+                    aniProps[scrollDir] = scrollTargetOffset.relative + (scrollTargetOffset.px + scrollerOffset + opts.offset);
+
+                    speed = opts.speed;
+
+                    // automatically calculate the speed of the scroll based on distance / coefficient
+                    if (speed === 'auto') {
+
+                        // $scroller[scrollDir]() is position before scroll, aniProps[scrollDir] is position after
+                        // When delta is greater, speed will be greater.
+                        delta = Math.abs(aniProps[scrollDir] - $scroller[scrollDir]());
+
+                        // Divide the delta by the coefficient
+                        speed = delta / opts.autoCoefficient;
+                    }
+
+                    aniOpts = {
+                        duration: speed,
+                        easing: opts.easing,
+                        complete: function () {
+                            onAfterScroll(opts);
+                        }
+                    };
+
+                    if (opts.step) {
+                        aniOpts.step = opts.step;
+                    }
+
+                    if ($scroller.length) {
+                        $scroller.stop().animate(aniProps, aniOpts);
+                    } else {
+                        onAfterScroll(opts);
+                    }
+                };
+
+                $.smoothScroll.version = version;
+                $.smoothScroll.filterPath = function (string) {
+                    string = string || '';
+
+                    return string
+                        .replace(/^\//, '')
+                        .replace(/(?:index|default).[a-zA-Z]{3,4}$/, '')
+                        .replace(/\/$/, '');
+                };
+
+                // default options
+                $.fn.smoothScroll.defaults = defaults;
+
+            }));
+    </script> -->
+
+
+<script type="text/javascript" src="main.js"></script><script type="text/javascript" src="style.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="other.js"></script></body>
+
 </html>
