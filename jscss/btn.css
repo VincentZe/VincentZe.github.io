@@ -1,0 +1,220 @@
+.btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 14px;
+  user-select: none;
+}
+
+.Airage {
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0px 0px 2px 0.5px rgb(206 206 206) inset, 0px 0px 1px 1px rgb(206 206 206);
+  width: 147px;
+  height: 32px;
+  border-radius: 16px;
+  text-align: left;
+  line-height: 32px;
+  padding: 0 10px;
+  user-select: none;
+  /* pointer-events: none; */
+}
+
+.btnUnit {
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0px 3px 5px 1px rgb(0 0 0 / 30%);
+  width: 147px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 10px;
+  user-select: none;
+  float: left;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 5px;
+  color: white;
+  background-color: #999;
+  border: 0;
+}
+
+.airAgeT {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+
+}
+
+.airAgeT.hideA {
+  visibility: 0;
+  opacity:0;
+}
+
+.btnUnit.active {
+  background-color: rgb(242 255 255);
+  background-color: #6296ff;
+}
+
+.btnUnit img {
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.btnUnit:hover {
+  cursor: pointer;
+}
+
+.Tag {
+  display: block;
+  font-size: 32px;
+}
+
+.InputClass {
+  pointer-events: all;
+  margin: 0;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 147px;
+  float: left;
+}
+
+.InputClass.hide {
+  display: none;
+}
+
+.InputClass2.hide {
+  display: none;
+}
+
+.InputClass2 {
+  pointer-events: all;
+  margin: 0;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 300px;
+  float: left;
+  height: 20px;
+}
+
+#temperature {
+  height: 64px;
+  transform: translateY(-42px);
+  padding-top: 10px;
+}
+
+.btnUnit.fadeout {
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+  opacity: 0;
+}
+
+.btnUnit.fadein {
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+  opacity: 1;
+}
+
+.btnUnit.hide {
+  opacity: 0;
+  display: none;
+}
+
+.indicator {
+  float: right;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #BBBBBB;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.indicatorLeft {
+  float: left;
+  height: 25px;
+  padding-top: 5px;
+  margin-left: 5px;
+}
+
+.indicatorRight {
+  float: right;
+  height: 25px;
+  padding-top: 5px;
+  margin-left: 5px;
+}
+
+.EnviromentImgs {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  background-size: contain;
+  background-position: center;
+  BACKGROUND-REPEAT: NO-REPEAT;
+}
+
+.TemperatureFilter {
+  mix-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0);
+  height: 100%;
+  width: 100%;
+  float: left;
+  position: absolute;
+  top: 0;
+  user-select: none;
+  background-size: contain;
+  background-position: center;
+  BACKGROUND-REPEAT: NO-REPEAT;
+}
+
+.cameraAdjArea {
+  float: left;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+.cameraAdjArea.but {
+  bottom: 150px;
+}
+
+.cameraAdjArea.hide {
+  display: none;
+}
+
+.cameraAdjArea button {
+  pointer-events: all;
+}
+
+.controllor {
+  position: absolute;
+  left: 20px;
+  bottom: 100px;
+  font-size: 14px;
+  user-select: none;
+}
+
+.disablePointerEvents {
+  pointer-events: none;
+}
+
+.RotateTag {
+  float: left;
+}
+
+.RotateTag.hide {
+  display: none;
+}
+
+.hide {
+  display: none;
+}

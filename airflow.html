@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="Zh-CN">
+
+<head>
+  <title>空气流速项目演示</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <!-- Search Engines -->
+  <meta name="description"
+    content="viewspread animation displays the product in a three-dimensional form in small size.Using Webgl graphics processing technology, users can control the product independently, without being limited by angle, time and space. You can also customize your 3D application at will, to enjoy the convenience brought by 3D customization.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="viewspread">
+  <meta property="og:description"
+    content="viewspread animation displays the product in a three-dimensional form in small size.Using Webgl graphics processing technology, users can control the product independently, without being limited by angle, time and space. You can also customize your 3D application at will, to enjoy the convenience brought by 3D customization.">
+  <meta property="og:image" content="favicon.png">
+  <meta property="og:type" content="website">
+  <meta name="generator" content="viewspread 3.8.1">
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+  <link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!-- assets -->
+  <script src="jscss/ie_compat.js"></script>
+  <script src="jscss/viewspread.js"></script>
+  <script src="jscss/model.js"></script>
+  <script src="jscss/RandomSelectObject.js"></script>
+  <script src="jscss/GetDataHelper.js"></script>
+  <script src="jscss/main.js"></script>
+  <script src="jscss/AirFLowFunctions.js"></script>
+  <script src="jscss/SwitchWindDirection.js"></script>
+  <link rel="stylesheet" type="text/css" href="jscss/model.css">
+  <!-- 引入按钮样式 -->
+  <link rel="stylesheet" type="text/css" href="jscss/btn.css">
+<link href="style.07cc63c04540ae6ddfc7.css" rel="stylesheet"></head>
+
+<body>
+  <div class="cameraAdjArea">
+    <div class="editView hide">
+      <div style="font-size: 24px;color: brown;z-index: 15;float: left;display: none;">
+        为方便调试已将API禁用 </br>
+        这个提示在Index.html 39行</br>
+        启用API在Index.html 265行 传入cameraAdj=1 默认关闭</br>
+        关闭控制条在btn.css 64行</br>
+      </div>
+      <br />
+      <a href="./index.html" class="ParticleLook btnUnit active" style="float: left; pointer-events: all;">返回3D美术作品集</a>
+      <br />
+      <br />
+      <span style="float: left;font-size: 28px;margin-top: 20px;">摄像机&世界参数：</span>
+      <br />
+      <br />
+      <span class="CameraPosition" style="color: rgb(81, 162, 255);font-size: 22px;"></span>
+      <br />
+      <span class="CameraPositionJson" style="color: rgb(99, 64, 255);font-size: 22px;"></span>
+      <br />
+      <button onclick="copyText()">复制Url参数</button>
+      <button onclick="copyJson()">复制Jason</button>
+      <button onclick="resetCamera()">重置相机</button>
+      <button onclick="resetWorldRotation()" class="scene3">复位世界旋转</button>
+      <div class="View hide" style="width: 340px;">
+        <span class="RotateTag">环境球X轴旋转:</span> <input class="WorldRotationInputX InputClass2" type="range" min="0"
+          max="180" value="90" step="0.01" class="slider-range" onmousedown="MouseOnWorldRotation()"
+          onmouseup="MouseUpWorldRotation()">
+        <span class="RotateTag">环境球Y轴旋转:</span><input class="WorldRotationInputY InputClass2" type="range" min="0"
+          max="360" value="0" step="0.01" class="slider-range" onmousedown="MouseOnWorldRotation()"
+          onmouseup="MouseUpWorldRotation()">
+        <span class="RotateTag">环境球Z轴旋转:</span><input class="WorldRotationInputZ InputClass2" type="range" min="0"
+          max="360" value="0" step="0.01" class="slider-range" onmousedown="MouseOnWorldRotation()"
+          onmouseup="MouseUpWorldRotation()">
+        <!-- <span class="RotateTag">环境球缩放:</span> -->
+        <input class="WorldScaleInput InputClass2" type="range" min="0.002"
+          max="0.4" value="0.05" step="0.0001" class="slider-range" onmousedown="MouseOnWorldScale()"
+          onmouseup="MouseUpWorldScale()">
+        <div style="height: 100px;width: 300px;float: left;">
+
+        </div>
+        <div style="width: 340px;">
+          <span class="RotateTag">空气流X轴旋转:</span> <input class="AirRotationInputX InputClass2" type="range" min="0"
+            max="360" value="0" step="0.01" class="slider-range" onmousedown="MouseOnAirRotation()"
+            onmouseup="MouseUpAirRotation()">
+          <span class="RotateTag">空气流Y轴旋转:</span><input class="AirRotationInputY InputClass2" type="range" min="0"
+            max="360" value="0" step="0.01" class="slider-range" onmousedown="MouseOnAirRotation()"
+            onmouseup="MouseUpAirRotation()">
+          <span class="RotateTag">空气流Z轴旋转:</span><input class="AirRotationInputZ  InputClass2" type="range" min="0"
+            max="360" value="0" step="0.01" class="slider-range" onmousedown="MouseOnAirRotation()"
+            onmouseup="MouseUpAirRotation()">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="container" class="EnviromentImgs" style="background-color: rgb(32, 32, 32); pointer-events: all;">
+    <div id="simple-preloader-background">
+      <div class="simple-preloader-container">
+        <div class="simple-preloader-text-container">
+          <p class="p-text" id="percentage"></p>
+          <p class="simple-preloader-text">&nbsp;&nbsp;3D Loading...</p>
+        </div>
+        <div class="simple-preloader-line-container">
+          <div id="simple-preloader-line"></div>
+        </div>
+      </div>
+    </div>
+    <div id="TemperatureFilter" class="TemperatureFilter" style="pointer-events: none;"></div>
+    <div id="EnviromentImgsTop" class="EnviromentImgs"
+    style="pointer-events: none;"></div>
+
+    <div id="AirAgeTag1" class="btnUnit airAgeT">
+      <div>空气龄：<span>0</span>
+      </div>
+    </div>
+    <div id="AirAgeTag2" class="btnUnit airAgeT">
+      <div>空气龄：<span></span>
+      </div>
+    </div>
+    <div id="AirAgeTag3" class="btnUnit airAgeT">
+      <div>空气龄：<span></span>
+      </div>
+    </div>
+
+    <div class="controllor" style="height: 80px;pointer-events: all;">
+
+      <input class="TemperatureInput InputClass hide" type="range" min="12" max="42" value="26" step="1"
+        class="slider-range">
+      <input class="AirFlowSpeedInput InputClass hide" type="range" min="0" max="6" value="4" step="1"
+        class="slider-range" onchange="AirFlowSpeedSwitching()">
+      <input class="H2OSpeedInput InputClass hide" type="range" min="0" max="6" value="4" step="1" class="slider-range"
+        onchange="H2OSpeedSwitching()">
+      <input class="CO2SpeedInput InputClass hide" type="range" min="0" max="6" value="4" step="1" class="slider-range"
+        onchange="CO2SpeedSwitching()">
+      <input class="PM25SpeedInput InputClass hide" type="range" min="0" max="6" value="4" step="1" class="slider-range"
+        onchange="PM25SpeedSwitching()">
+      <div class="ParticleLookSwitch btnUnit active" style="background-color: #ffa962;">
+        <img class="ParticleLook indicatorLeft" src="./model/H2O_T3_v2.png" alt="空气流速">
+        粒子外观切换
+      </div>
+      <div class="WindDirectionSwitch btnUnit active" style="background-color: #ffa962;">
+        风向切换：
+        <span class="WindDirectionUI">拐角</span>
+      </div>
+      <div class="WorldRotateSwitch btnUnit active" style="background-color: #ffa962;">
+        <span class="WorldRotateUI">停止旋转</span>
+      </div>
+    </div>
+
+
+
+    <div class="btn" style="pointer-events: all;">
+
+      <div>
+        <!-- 手动温度控制 -->
+        <div id='temperature' class="temperature btnUnit active">
+          <span class="TemperatureTag Tag">26℃</span>
+          温度
+        </div>
+
+        <div class="air btnUnit">
+          <img class="indicatorLeft" src="./img/air.png" alt="空气流速">
+          空气流速
+        </div>
+
+        <div class="water btnUnit">
+          <img class="indicatorLeft" src="./img/water.png" alt="水滴流速">
+          水滴流速
+          <img class="indicatorRight" src="./model/H2O_T3_v2.png" alt="水滴流速">
+          <!-- <div class="indicator" style="background-color: rgb(131, 194, 253);"></div> -->
+        </div>
+
+        <div class="co2 btnUnit">
+          <img class="indicatorLeft" src="./img/co2.png" alt="气体运动">
+          CO<sub>2</sub>气体运动
+          <img class="indicatorRight" src="./model/CO2_T3.png" alt="气体运动">
+          <!-- <div class="indicator" style="background-color: rgb(250, 230, 207);"></div> -->
+        </div>
+
+        <div class="pm25 btnUnit">
+          <img class="indicatorLeft" src="./img/particulates.png" alt="PM2.5运动">
+          PM2.5运动
+          <img class="indicatorRight" src="./model/PM25_T3.png" alt="PM2.5运动">
+          <!-- <div class="indicator" style="background-color: rgb(54, 54, 54);"></div> -->
+        </div>
+
+        <div class="airAge btnUnit active">
+          <img class="indicatorLeft" src="./img/airAge.png" alt="空气龄展示">
+          空气龄展示
+        </div>
+
+        <!-- <input type="range" min="0" max="5" value="0" step="1"> -->
+
+      </div>
+
+      <!-- <div>
+      <input type="range" min="0" max="5" value="" step="1">
+      <input type="range" min="0" max="5" value="" step="1">
+      <input type="range" min="0" max="5" value="" step="1">
+    </div> -->
+
+    </div>
+<script type="text/javascript" src="commons~main.07cc63c04540ae6ddfc7.js"></script><script type="text/javascript" src="main.07cc63c04540ae6ddfc7.js"></script><script type="text/javascript" src="style.07cc63c04540ae6ddfc7.js"></script><script type="text/javascript" src="polyfills.07cc63c04540ae6ddfc7.js"></script><script type="text/javascript" src="bud.07cc63c04540ae6ddfc7.js"></script></body>
+<script>
+  
+</script>
+
+</html>

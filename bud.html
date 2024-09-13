@@ -4,7 +4,7 @@
  * @Author: ShowE
  * @Date: 2021-07-07 12:04:10
  * @LastEditors: ShowE
- * @LastEditTime: 2023-04-28 04:49:57
+ * @LastEditTime: 2023-06-15 11:34:54
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,7 @@
     <script src="js/swiper-bundle.min.js"> </script>
     <!-- Command & Conquer Red Alert 3 -->
 
-</head>
+<link href="style.07cc63c04540ae6ddfc7.css" rel="stylesheet"></head>
 
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
@@ -55,16 +55,16 @@
                         <a href="#home" class="nav-link smoothScroll"></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#class" class="nav-link smoothScroll">三维静帧/动画</a>
+                        <a href="#characterrenders" class="nav-link smoothScroll">角色套装渲染</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#effect" class="nav-link smoothScroll">特效/图形动画</a>
+                        <a href="#class" class="nav-link smoothScroll">地图渲染</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">插画/动态壁纸</a>
+                        <a href="#about" class="nav-link smoothScroll">KV、产品渲染</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">编程相关</a>
+                        <a href="#contact" class="nav-link smoothScroll">？？？？</a>
                     </li>
                 </ul>
                 <!-- <ul class="social-icon ml-lg-3">
@@ -79,11 +79,13 @@
 
 
     <!-- HERO -->
-    <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+    <section class="hero d-flex flex-column justify-content-center align-items-center"
+        style="box-shadow: 0 0px 50px 30px #171C27;z-index: 2;" id="home">
 
         <div class="align-items-left"
             style="width: 100%;height: 100%;object-fit: cover;position: absolute;overflow: hidden;">
-            <img id="vedioSize" src="./images/Showreel/Pr_particle_v3_0.jpg" style="height: 100%; object-fit: cover;position: absolute;top: 30px;">
+            <img id="vedioSize" src="./images/Showreel_2023/Pr_particle_v3_0.jpg"
+                style="height: 100%; object-fit: cover;position: absolute;top: 30px;">
         </div>
         <div class="bg-overlay"></div>
 
@@ -95,18 +97,19 @@
 
                         <h6 data-aos="fade-up" data-aos-delay="300">推荐使用PC端查看 </h6>
                         <h6 data-aos="fade-up" data-aos-delay="300">本页面多处可横向滑动</h6>
-                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">2023 个人作品集</h1>
+                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">2022-2023</h1>
+                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">个人作品集</h1>
+                        <h3 class="text-white" data-aos="fade-up" data-aos-delay="500">（正在施工 2023.05.23）</h3>
 
                         <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">继续↓</a>
-                        <!-- 
-                        <a href="https://gitee.com/showEv/interactive-demonstrate-app/raw/master/images/2021.07.16Showreel.zip" download="个人作品集.zip"
-                            class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">下载作品集压缩包</a> -->
-                        <!-- <a href="#contact" class="btn custom-btn bordered mt-3" data-aos="fade-up"
-                            data-aos-delay="700">网页端的三维交互程序</a> -->
+
                         <a href="./index.html" class="btn custom-btn bordered mt-3" data-aos="fade-up"
                             data-aos-delay="700">2016~2021</a>
+                        <a href="./airflow.html?cameraAdj=1&sceneId=2" class="btn custom-btn bordered mt-3" data-aos="fade-up"
+                            data-aos-delay="700">web3D项目展示</a>
                         <p class="mt-5" data-aos="fade-up" data-aos-delay="700">浏览器版本较低可能导致页面显示不全或错误</p>
-                        <p class="mt-5" style="margin-top: 0!important" data-aos="fade-up" data-aos-delay="700">本网页资源较多，可能有的时候图片、视频加载不出，刷新页面即可</p>
+                        <p class="mt-5" style="margin-top: 0!important" data-aos="fade-up" data-aos-delay="700">
+                            本网页资源较多，可能有的时候图片、视频加载不出，刷新页面即可</p>
 
                     </div>
                 </div>
@@ -114,578 +117,322 @@
         </div>
     </section>
 
-
-    <section class="feature" id="feature">
-        <div class="container">
-            <div class="row">
-                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12 text-center">
-                    <div class="about-working-hours">
-                        <div>
-
-                            <h2 class="mb-4 text-white" data-aos="fade-right" data-aos-delay="200">三维静帧 / 动画</h2>
-                            <div class="" data-aos="fade-right" data-aos-delay="200">
-                                <div class="class-thumb">
-                                    <video src="images/Showreel/StarEngine_1.webm" class="img-fluid"
-                                        style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
-                                        loop="loop" muted="muted"></video>
-                                </div>
-                                <div class="team-info d-flex flex-column p-0">
-                                    <a href="#class" class="btn custom-btn bg-color" style="font-size: large;">查看更多</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12 text-center">
-                    <div class="about-working-hours">
-                        <div>
-
-                            <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="300">特效 / 图形动画</h2>
-                            <div class="" data-aos="fade-up" data-aos-delay="300">
-                                <div class="class-thumb">
-                                    <video src="images/Showreel/electri.webm" class="img-fluid"
-                                        style="object-fit:cover; height: 300px;width: 100%; display: block;"
-                                        autoplay="autoplay" loop="loop" muted="muted"></video>
-                                </div>
-                                <div class="team-info d-flex flex-column p-0">
-                                    <a href="#effect" class="btn custom-btn bg-color" style="font-size: large;">查看更多</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12 text-center">
-                    <div class="about-working-hours">
-                        <div>
-                            <h2 class="mb-4 text-white" data-aos="fade-left" data-aos-delay="100">插画 / 动态插画</h2>
-
-                            <div class="" data-aos="fade-left" data-aos-delay="100">
-                                <div class="class-thumb" style="overflow: hidden;">
-                                    <div class="" style="width:500px;height: 300px;">
-                                        <video id="vedioSize" src="./images/Showreel/LengKai.webm"
-                                            style="height: 120%; object-fit: cover;" autoplay="autoplay" loop="loop"
-                                            muted="muted"></video>
-                                    </div>
-                                    <!-- <video src="./images/Showreel/LengKai.webm" class="img-fluid"
-                                        style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
-                                        loop="loop" muted="muted"></video> -->
-                                </div>
-                                <div class="team-info d-flex flex-column p-0">
-                                    <a href="#about" class="btn custom-btn bg-color" style="font-size: large;">查看更多</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Basic -->
+    <section class="about section d-flex flex-column justify-content-center align-items-center"
+        style="padding: 0; overflow: hidden;background-color: #FFF9E8;" id="characterrenders">
+        <div class="showreel row"
+            style="padding:0;position: relative;background-color: #171D27;box-shadow: 0 0px 50px 20px rgba(23, 17, 61,0.3);">
+            <img class="cybersuit" src="./images/Showreel_2023/CyberSuit.jpg" alt="" data-aos="fade-down"
+                data-aos-delay="0" data-aos-duration="2000" data-aos-offset="500">
         </div>
     </section>
 
+    <section class="about section " style="padding: 0; overflow: visible;background-color: #FFF9E8;">
+        <div class="row" style="position: relative;top: -5rem;container-type: size;" data-aos="fade-up"
+            data-aos-delay="300">
+            <div class="col-4 col-lg-8 col-md-6 placeholder">
+            </div>
+            <div class="pr-lg-6 pr-md-5 col-8 col-lg-4 col-md-6 ">
+                <div class="team-info">
+                    <h2 class="mb-2 front-1" data-aos="fade-up" data-aos-delay="200">角色套装-制作-渲染</h2>
+                    <p data-aos="fade-up" data-aos-delay="300">
+                        高模、低模、布线、UV、材质、渲染，全流程3D基本功扎实<!-- 雕刻、布线、UV、材质、 -->
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <!-- CLASS -->
+        </div>
+        <div class="showrell row" style="top:0">
+            <!-- <div id="basic_1" class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                aa
+            </div> -->
+            <div id="basic_1" class="col-12 col-lg-6 pr-0" data-aos="fade-up" data-aos-delay="100">
+                <img class="knightfour " src="./images/Showreel_2023/Knight_wire_2.jpg" alt="">
 
-    <!-- ABOUT -->
-    <section class="about section" style="z-index: -1;background-color: #1A181B;" id="">
-        <div class="showrell">
-            <div class="swiper-container " style="height: 600px;" data-aos="fade-left" data-aos-delay="100">
+                <img class="knightfour " src="./images/Showreel_2023/Knight_UV_2.jpg" alt="">
+
+                <img class="knightfour " src="./images/Showreel_2023/Knight_col.jpg" alt="">
+
+                <img class="knightfour " src="./images/Showreel_2023/Knight_normal.jpg" alt="">
+
+            </div>
+
+            <div id="basic_2" class="swiper-container-3 col-12 col-lg-6 pl-0" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="100">UE4 地编 自然环境 2021.8</h2>
-                            </div>
-                        </div>
-                        <img class="kandy " src="./images/Showreel/Forest.jpg">
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="200">UE4 地编 风景 2021.8</h2>
-                            </div>
-                        </div>
-                        <img class="kandy " src="./images/Showreel/RoadTrip.jpg">
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">C4D 古城 场景 2021.9</h2>
-                            </div>
-                        </div>
-                        <img class="kandy " src="./images/Showreel/AncientChina.jpg">
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="400">Houdini自动字形散布 2021.9</h2>
-                            </div>
-                        </div>
-                        <img class="kandy " src="./images/Showreel/HoudiniScatter.jpg">
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="400">Blender 汽车高模 2021.7</h2>
-                            </div>
-                        </div>
-                        <img class="kandy " src="./images/Showreel/C74KF.jpg">
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="400">Blender 汽车高模 2021.7</h2>
-                            </div>
-                        </div>
-                        <img class="kandy " src="./images/Showreel/C74KB.jpg">
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="400">C4D 抽象图形 2018.3</h2>
-                            </div>
-                        </div>
-                        <img class="kandy " src="./images/Showreel/cube.jpg">
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="400">C4D 抽象图形 2018.3</h2>
-                            </div>
-                        </div>
-                        <img class="kandy " src="./images/Showreel/xp.jpg">
-                    </div>
 
+                        <img class="knight alpha" src="./images/Showreel_2023/Knight_Render_4.jpg"
+                            title="Knight Render 4">
+                    </div>
+                    <div class="swiper-slide ">
+
+                        <img class="knight alpha" src="./images/Showreel_2023/Knight_Render_6.jpg"
+                            title="Knight Render 6">
+                    </div>
+                    <div class="swiper-slide ">
+
+                        <img class="knight alpha" src="./images/Showreel_2023/Knight_Render_5.jpg"
+                            title="Knight Render 5">
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+
             </div>
+
 
         </div>
 
-        <div class="container">
-            <div class="row">
-
-
-                <div class="mt-lg-0 mt-5 mb-5 mb-lg-0 mb-5 mb-lg-5 mb-md-4 col-12 placeholder" style="height: 400px;">
-                </div>
-                <div class="mt-lg-4 mt-5 mb-lg-0 mb-0 ml-lg-6 ml-md-8 ml-8 col-12">
-                    <div class="team-info">
-                        <h2 class="mb-2" data-aos="fade-up" data-aos-delay="200">三维静帧</h2>
-                        <p data-aos="fade-up" data-aos-delay="300">
-                            包含场景和建模，多数为近期作品
-                        </p>
-                        <!-- <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow"
-                                href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML
-                                template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact"
-                                target="_parent">contact Tooplate</a> immediately. Thank you.</p> -->
+    </section>
+    <section class="class section" style="object-fit: cover; background-color: #ff2c5d; overflow: hidden; padding: 0;">
+        <!-- height: 285vw; -->
+        <div class="col-lg-12 col-12 text-center" style="position: relative;z-index: 2;top: 2vw; container-type: size;">
+            <h2 class="text-white" style="font-size: 5rem;" data-aos="fade-down" data-aos-delay="200"
+                data-aos-offset="500">产品渲染</h2>
+        </div>
+        <div class="showrell" style="top: 0;">
+            <div class="swiper-container-2 " data-aos="fade-down" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="my-slide">
+                        <div class="">
+                            <div class="class-thumb">
+                                <img src="./images/Showreel_2023/DDX_UI.jpg" class="canyonrender "
+                                    autoplay="autoplay" loop="loop" muted="muted"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-slide">
+                        <div class="">
+                            <div class="class-thumb">
+                                <img src="./images/Showreel_2023/DDX_UI_v2.jpg" class="canyonrender "
+                                    autoplay="autoplay" loop="loop" muted="muted"></img>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
-    
-    <section class="class section"
-        style="background-image: url(./images/Showreel/carbonpiep.jpg);object-fit: cover; background-size: cover; background-repeat:no-repeat;background-position: center;overflow: hidden;"
+    <section class="class section" style="object-fit: cover; background-color: #ff2c5d; overflow: hidden; padding: 0;"
         id="class">
-        <div class="container mb-5">
-            <div class="row">
-                <div class="col-lg-12 col-12 text-center mb-5">
-                    <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">三维动画</h2>
-                </div>
-
-            </div>
+        <!-- height: 285vw; -->
+        <div class="col-lg-12 col-12 text-center" style="position: relative;z-index: 2;top: 2vw; container-type: size;">
+            <h2 class="text-white" style="font-size: 5rem;" data-aos="fade-down" data-aos-delay="200"
+                data-aos-offset="500">游戏地图渲染</h2>
         </div>
-        <div class="showrell">
-            <!-- <div class="col-lg-10 col-md-10 col-12" style="position: relative;top:-7rem;z-index: 0;"> -->
-            <!-- style="width:100%;height: 600px;object-fit: cover;position: absolute;left: 0;top: 0;" -->
-
-            <div class="swiper-container2 " data-aos="fade-left" data-aos-delay="100">
+        <div class="showrell" style="top: 0;">
+            <div class="swiper-container-2 " data-aos="fade-down" data-aos-delay="100">
                 <div class="swiper-wrapper">
-                    <div class="my-slide col-12 col-lg-4">
-
-                        <div class="mt-5 mt-lg-5 col-lg-12 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="my-slide">
+                        <div class="">
                             <div class="class-thumb">
-                                <video src="../images/Showreel/Engines.webm" class="img-fluid "
-                                    style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
-                                    loop="loop" muted="muted"></video>
-                                <div class="class-info">
-                                    <h3 class="mb-1">发动机绑定</h3>
-                                </div>
+                                <img src="./images/Showreel_2023/Canyon_Render_2_cc_3.jpg" class="canyonrender "
+                                    autoplay="autoplay" loop="loop" muted="muted"></img>
                             </div>
                         </div>
                     </div>
-                    <div class="my-slide col-12 col-lg-4">
-
-                        <div class="mt-5 mt-lg-5 col-lg-12 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                    <div class="my-slide">
+                        <div class="">
                             <div class="class-thumb">
-                                <video src="../images/Showreel/Engine.webm" class="img-fluid "
-                                    style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
-                                    loop="loop" muted="muted"></video>
-                                <div class="class-info">
-                                    <h3 class="mb-1">复杂的机械绑定</h3>
-
-                                </div>
+                                <img src="./images/Showreel_2023/Canyon_Render_4.jpg" class="canyonrender "
+                                    autoplay="autoplay" loop="loop" muted="muted"></img>
                             </div>
                         </div>
                     </div>
-                    <div class="my-slide col-12 col-lg-4">
-
-                        <div class="mt-5 mt-lg-5 col-lg-12 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="my-slide">
+                        <div class="">
                             <div class="class-thumb">
-                                <video src="../images/Showreel/train.webm" class="img-fluid "
-                                    style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
-                                    loop="loop" muted="muted"></video>
-                                <div class="class-info">
-                                    <h3 class="mb-1">火车联动结构绑定</h3>
-                                </div>
+                                <img src="./images/Showreel_2023/Canyon_Render_5.jpg" class="canyonrender "
+                                    autoplay="autoplay" loop="loop" muted="muted"></img>
                             </div>
                         </div>
                     </div>
-                    <div class="my-slide col-12 col-lg-4">
-
-                        <div class="mt-5 mt-lg-5 col-lg-12 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
-                            <div class="class-thumb">
-                                <video src="./images/Showreel/StarEngine_1.webm" class="img-fluid "
-                                    style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
-                                    loop="loop" muted="muted"></video>
-                                <div class="class-info">
-                                    <h3 class="mb-1">星型发动机透视</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="my-slide col-12 col-lg-4">
-
-                        <div class="mt-5 mt-lg-5 col-lg-12 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
-                            <div class="class-thumb">
-                                <video src="./images/Showreel/earth.webm" class="img-fluid "
-                                    style="object-fit:cover; height: 300px; display: block;" autoplay="autoplay"
-                                    loop="loop" muted="muted"></video>
-                                <div class="class-info">
-                                    <h3 class="mb-1">地图展开动画</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <!-- <div class="swiper-scrollbar"></div> -->
-
             </div>
-            <!-- 如果需要导航按钮 -->
-            <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
-            <!-- 如果需要滚动条 -->
-
         </div>
-        <div class="container mb-0">
-            <div class="row">
+        <div class="showrell" style="top:0;overflow: hidden;">
+            <img style="width: 100%;" src="./images/Showreel_2023/Desert_Render_ex.jpg" alt="" data-aos="fade-down"
+                data-aos-delay="0" data-aos-duration="2000" data-aos-offset="50">
+        </div>
 
-                <div class="col-lg-12 col-12 text-center mb-0">
-
-                    <!-- <div class="mt-lg-4 mt-5 mb-lg-0 mb-0 ml-lg-6 ml-md-8 ml-8 col-12">
-                    <div class="team-info">
-                        <h2 class="mb-2" data-aos="fade-up" data-aos-delay="200">三维动画</h2>
-                        <p data-aos="fade-up" data-aos-delay="300">
-                            自高中开始对视频制作感兴趣，并逐步了解到AE等视频制作软件，如今AE已经成为我最了解的软件之一。在大学期间最常使用AE制作委托的动画部分，偶尔也做一些2D特效来玩。
-                            因为制作的视频大多不长，AE也接手了我所有的视频剪辑需求。
-                        </p>
-                        <p data-aos="fade-up" data-aos-delay="300">
-                            就在上个月，朋友所在的公司突然有了AE熟手的需求，来询问我后 我便临时加入到了他们的外包项目当中。
-                            期间为了完成甲方多轮意见会议的指标，曾多次和组长加班到凌晨。历时两个星期，最终提交了项目得到了甲方和朋友老板的肯定。
-                        </p>
-                    </div>
-                </div> -->
-                    <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">三维静帧</h2>
-                </div>
-            </div>
-
-    </section>
-    <section class="about section" style="z-index: -1;background-color: #1A181B;" id="effect">
-
-        <div class="showrell">
-            <!-- <div class="col-lg-10 col-md-10 col-12" style="position: relative;top:-7rem;z-index: 0;"> -->
-            <!-- style="width:100%;height: 600px;object-fit: cover;position: absolute;left: 0;top: 0;" -->
-            <div class="swiper-container " style="height: 600px;" data-aos="fade-left" data-aos-delay="100">
+        <div class="showrell" style="z-index: 3;z-index: 4;">
+            <div class="swiper-container-5 " style="background-color: transparent;padding-top: 3rem;" data-aos="fade-up"
+                data-aos-delay="100" data-aos-duration="2000">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide ">
-                        <div class="kandy" style="width: 960px;">
-                            <div class="row justify-content-center">
-                                <h1 id="placeholder2" class="mb-2col-12 text-white" data-aos="fade-up"
-                                    data-aos-delay="100">
-                                    &nbsp;
-                                </h1>
-                                <h1 class="mb-2 mt-5 col-12 text-white" data-aos="fade-up" data-aos-delay="100">
-                                    字节跳动旗下
-                                </h1>
-                                <h2 class="mb-2 mt-2 col-12 text-white" data-aos="fade-up" data-aos-delay="300">
-                                    大力教育《瓜瓜龙启蒙》项目外包
-                                </h2>
-                                <p class=" col-12 text-white" data-aos="fade-up" data-aos-delay="400">
-                                    2021年6月末到7月初担任&nbsp;
-                                    <span class="strong"
-                                        style="color: #f13a11;display: inline-block;font-weight: bold;">环境动画</span>
-                                </p>
-                                <p class=" col-12 text-white" data-aos="fade-up" data-aos-delay="400">
-                                    受限于保密协议无法展示
-                                </p>
-                            </div>
-                        </div>
+                        <img class="desertrender " src="./images/Showreel_2023/Desert_1.jpg">
                     </div>
                     <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="100">Logo演绎</h2>
-                            </div>
-                        </div>
-                        <video class="kandy " src="./images/Showreel/ShowE_BlackWood_Logo_v2.webm" autoplay="autoplay"
-                            loop="loop" muted="muted"></video>
+                        <img class="desertrender " src="./images/Showreel_2023/Desert_2.jpg">
                     </div>
                     <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">节目插屏</h2>
-                            </div>
-                        </div>
-                        <video class="kandy " src="./images/Showreel/NWSPS.webm" autoplay="autoplay" loop="loop"
-                            muted="muted"></video>
+                        <img class="desertrender " src="./images/Showreel_2023/Desert_3.jpg">
                     </div>
                     <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">节目Logo演绎</h2>
-                            </div>
-                        </div>
-                        <video class="kandy " src="./images/Showreel/NWS.webm" autoplay="autoplay" loop="loop"
-                            muted="muted"></video>
+                        <img class="desertrender " src="./images/Showreel_2023/Desert_4.jpg">
                     </div>
                     <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">2D特效</h2>
-                            </div>
-                        </div>
-                        <video class="kandy " src="./images/Showreel/electri.webm" autoplay="autoplay" loop="loop"
-                            muted="muted"></video>
+                        <img class="desertrender " src="./images/Showreel_2023/Desert_5.jpg">
                     </div>
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="200">闪电</h2>
-                            </div>
-                        </div>
-                        <img class="kandy " src="./images/Showreel/lightingbeam_49.jpg">
-                    </div>
-                    <!-- <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">C4D X-Particles制作
-                                </h2>
-                            </div>
-                        </div>
-                        <img class="kandy " src="./images/Showreel/xp.jpg">
-                    </div> -->
                 </div>
-                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
-            <!-- 如果需要导航按钮 -->
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
-            <!-- 如果需要滚动条 -->
-
         </div>
-
         <div class="container">
-            <div class="row">
-
-
-                <div class="mt-lg-0 mt-5 mb-5 mb-lg-0 mb-5 mb-lg-5 mb-md-4 col-12 placeholder" style="height: 400px;">
-                </div>
-                <div class="mt-lg-4 mt-5 mb-lg-0 mb-0 ml-lg-6 ml-md-8 ml-8 col-12">
-                    <div class="team-info">
-                        <h2 class="mb-2" data-aos="fade-up" data-aos-delay="200">特效 / 图形动画</h2>
-                        <p data-aos="fade-up" data-aos-delay="300">
-                            自高中开始对视频制作感兴趣，并逐步了解到AE等视频制作软件，如今AE已经成为我最了解的软件之一。在大学期间最常使用AE制作委托的动画部分，偶尔也做一些2D特效来玩。
-                            因为制作的视频大多不长，AE也接手了我所有的视频剪辑需求。
+            <div class="row unity-title" style="position: relative;z-index: 4;container-type: size;">
+                <div class="mt-lg-4 mt-5 mb-lg-0 mb-0 ml-lg-6 ml-md-8 ml-8 col-12 ">
+                    <div class="team-info pt-0" style="box-shadow: 0 0 4rem 2rem #FF2C5D;">
+                        <h2 class="mb-0 lg-mb-2 unity" data-aos="fade-up" data-aos-delay="200">自研Unity场景导出离线渲染工作流</h2>
+                        <p class="unity" data-aos="fade-up" data-aos-delay="300">
+                            极大地提高游戏地图宣发图制作的效率，自动化解决大场景中的灯光和材质问题，同时一些难以转换的材质和特效，我也会根据游戏内代码进行重制还原。
                         </p>
-                        <p data-aos="fade-up" data-aos-delay="300">
-                            就在上个月，朋友所在的公司突然有了AE熟手的需求，来询问我后 我便临时加入到了他们的外包项目当中。
-                            期间为了完成甲方多轮意见会议的指标，曾多次和组长加班到凌晨。历时两个星期，最终提交了项目得到了甲方和朋友老板的肯定。
-                        </p>
-                        <!-- <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow"
-                                href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML
-                                template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact"
-                                target="_parent">contact Tooplate</a> immediately. Thank you.</p> -->
                     </div>
                 </div>
-                <!-- 
-                <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up"
-                    data-aos-delay="800">
-                    <div class="team-thumb">
-                        <img src="images/team/team-image01.jpg" class="img-fluid" alt="Trainer">
+            </div>
+        </div>
 
-                        <div class="team-info d-flex flex-column">
+        <div class="d-flex flex-column justify-content-center align-items-center"
+            style="overflow: hidden;z-index: 2;background-color: #1A181B;">
+            <div class="posirel" style="box-shadow: 0 2vw 3vw -2vw #F1FCFE;z-index: 3;" data-aos-delay="0" data-aos-duration="2000" data-aos-offset="50">
+                <img class="heavenrender" src="./images/Showreel_2023/HeavenMain_Render_2_cc.jpg" alt=""
+                    data-aos="fade-down">
+            </div>
+            <div class="posirel" style="overflow: hidden;box-shadow: 0 2vw 6vw -2vw #50d1da;z-index: 2;"
+                data-aos="fade-down" data-aos-delay="0" data-aos-duration="2000" data-aos-offset="50">
+                <img style="width: 100%;" src="./images/Showreel_2023/2023.05.06_Render_2.jpg" alt="">
+            </div>
+            <div class="posirel row" style="z-index: 0;">
+                <img class="col-12 col-lg-6 pr-0 pl-0" style="width: 50%;z-index: 2;"
+                    src="./images/Showreel_2023/Dungeon_preview_2.jpg" alt="" data-aos="fade-down" data-aos-delay="0"
+                    data-aos-duration="2000" data-aos-offset="50" data-aos-delay="500">
+                <img class="col-12 col-lg-6 pr-0 pl-0" style="width: 50%;z-index: 2;"
+                    src="./images/Showreel_2023/Dungeon_preview_4.jpg" alt="" data-aos="fade-down" data-aos-delay="0"
+                    data-aos-duration="2000" data-aos-offset="50" data-aos-delay="500">
+                <img class="col-12 col-lg-6 pr-0 pl-0" style="width: 50%;z-index: 0;"
+                    src="./images/Showreel_2023/Dungeon_preview_5.jpg" alt="" data-aos="fade-down" data-aos-delay="0"
+                    data-aos-duration="2000" data-aos-offset="50" data-aos-delay="500">
+                <img class="col-12 col-lg-6 pr-0 pl-0" style="width: 50%;z-index: 0;"
+                    src="./images/Showreel_2023/Dungeon_preview_7.jpg" alt="" data-aos="fade-down" data-aos-delay="0"
+                    data-aos-duration="2000" data-aos-offset="50" data-aos-delay="500">
+            </div>
 
-                            <h3>Catherina</h3>
-                            <span>Body trainer</span>
+            <div class="posirel" style="z-index: 4;">
+                <!-- <div class="col-lg-10 col-md-10 col-12" style="position: relative;top:-7rem;z-index: 0;"> -->
+                <!-- style="width:100%;height: 600px;object-fit: cover;position: absolute;left: 0;top: 0;" -->
 
-                            <ul class="social-icon mt-3">
-                                <li><a href="#" class="fa fa-instagram"></a></li>
-                                <li><a href="#" class="fa fa-facebook"></a></li>
-                            </ul>
+                <div class="swiper-container-2 " style="overflow: visible;" data-aos="fade-left" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+                        <div class="my-slide ">
+                            <div class="iceagedescrip col-12">
+                                <div class="mx-auto pt-1 pb-1 col-12 col-lg-12">
+                                    <h2 class="mb-2 text-white unity-title" data-aos="fade-up" data-aos-delay="200" data-aos-offset="-200">
+                                        地图快速3D概念</h2>
+
+                                    <p class="text-white" data-aos="fade-up" data-aos-delay="400" data-aos-offset="-200">
+                                        快速完成的3D概念沙盘方便后续原画针对具体的地图位置进行设计
+                                    </p>
+                                </div>
+
+                            </div>
+                            <img class="desertrender " src="./images/Showreel_2023/Iceage_concept.jpg">
+                        </div>
+                        <div class="my-slide ">
+                            <div class="iceagedescrip col-12">
+                                <div class="mx-auto pt-1 pb-1 col-12 col-lg-12">
+                                    <h2 class="mb-2 text-white unity-title" data-aos="fade-up" data-aos-delay="200" data-aos-offset="-200">
+                                        AI生成参考</h2>
+
+                                    <p class="text-white" data-aos="fade-up" data-aos-delay="400" data-aos-offset="-200">
+                                        对沙盘概念的完善，为原画提供更多参考</p>
+                                </div>
+
+                            </div>
+                            <img class="desertrender " src="./images/Showreel_2023/Iceage_AI.jpg">
+                        </div>
+
+                        <div class="my-slide ">
+                            <div class="iceagedescrip col-12">
+                                <div class="mx-auto pt-1 pb-1 col-12 col-lg-12">
+                                    <h2 class="mb-2 text-white unity-title" data-aos="fade-up" data-aos-delay="300" data-aos-offset="-200">
+                                        地图最终输出</h2>
+                                    <p class="text-white" data-aos="fade-up" data-aos-delay="400" data-aos-offset="-200">
+                                        Unity场景导出到离线渲染器渲染</p>
+                                </div>
+
+                            </div>
+                            <img class="desertrender " src="./images/Showreel_2023/Iceage.jpg">
+                        </div>
+
+                        <div class="my-slide ">
+                            <div class="iceagedescrip col-12">
+                                <div class="mx-auto pt-1 pb-1 col-12 col-lg-12">
+                                    <h2 class="mb-2 text-white unity-title " data-aos="fade-up" data-aos-delay="300" data-aos-offset="-200">
+                                        地图最终输出</h2>
+                                    <p class="text-white" data-aos="fade-up" data-aos-delay="400" data-aos-offset="-200">
+                                        Unity场景导出到离线渲染器渲染</p>
+                                </div>
+
+                            </div>
+                            <img class="desertrender " src="./images/Showreel_2023/Iceage_2.jpg">
                         </div>
                     </div>
-                </div> -->
-
+                </div>
             </div>
         </div>
     </section>
+    <!-- <section class="about section" style="z-index: -1;background-color: #34263b;padding: 0;" id="effect">
 
+    </section> -->
+
+    <!-- <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <img class="knight " src="./images/Showreel_2023/CyberSuit_1.png" title="Knight Render 4">
+                    </div>
+                    <div class="swiper-slide ">
+                        <img class="knight " src="./images/Showreel_2023/Chrismas.png" title="Knight Render 6">
+                    </div>
+                    <div class="swiper-slide ">
+                        <img class="knight " src="./images/Showreel_2023/VandingMachine.png" title="Knight Render 5">
+                    </div>
+                    <div class="swiper-slide ">
+                        <img class="knight " src="./images/Showreel_2023/Motorcycle.png" title="Knight Render 5">
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next" style="right: 5vw;"></div> -->
 
     <!-- ABOUT -->
-    <section class="about section" style="z-index: -1;background-color: #1A181B;" id="about">
-        <div class="showrell">
-            <!-- <div class="col-lg-10 col-md-10 col-12" style="position: relative;top:-7rem;z-index: 0;"> -->
-            <!-- style="width:100%;height: 600px;object-fit: cover;position: absolute;left: 0;top: 0;" -->
-
-            <div class="swiper-container " style="height: 600px;" data-aos="fade-left" data-aos-delay="100">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="100">Frozen</h2>
-
-                                <p data-aos="fade-up" data-aos-delay="400">
-                                    于2020年7月完成创作。<a style="font-weight:bold;"
-                                        href="https://www.bilibili.com/video/BV1p54y167b8" target="_blank"
-                                        data-aos-delay="400">BV1p54y167b8</a></p>
-                            </div>
-
-                        </div>
-                        <video class="kandy " src="./images/Showreel/LengKai.webm" autoplay="autoplay" loop="loop"
-                            muted="muted"></video>
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-12">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="200">蜘蛛战车</h2>
-
-                                <p class="text-white" data-aos="fade-up" data-aos-delay="400">
-                                    于2020年1月完成创作。为红色警戒3知名Mod日冕创作，不过很遗憾，主创对这个设计并不感兴趣，最后没有实装意向。灵感源于《看门狗1》中的一个数位旅程，起稿阶段使用Blender
-                                    GreasePencil功能进行辅助</p>
-                            </div>
-
-                        </div>
-                        <img class="kandy " src="./images/Showreel/SpiderTank.jpg">
-                    </div>
-                    <!-- <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">Storm</h2>
-
-                                <p data-aos="fade-up" data-aos-delay="400">
-                                    于2019年9月完成创作。</p>
-                            </div>
-
-                        </div>
-                        <img class="kandy " src="./images/Showreel/Storm.jpg">
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">Forest</h2>
-
-                                <p data-aos="fade-up" data-aos-delay="400">
-                                    于2018年11月完成创作。</p>
-                            </div>
-
-                        </div>
-                        <video class="kandy " src="./images/Showreel/Forest_Animation_Loop.webm" autoplay="autoplay"
-                            loop="loop" muted="muted"></video>
-                    </div>
-
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">Summer Stone</h2>
-
-                                <p data-aos="fade-up" data-aos-delay="400">
-                                    于2019年2月完成创作。</p>
-                            </div>
-
-                        </div>
-                        <video class="kandy " src="./images/Showreel/Giant_2AE_s_re.webm" autoplay="autoplay"
-                            loop="loop" muted="muted"></video>
-                    </div> -->
-                    <div class="swiper-slide ">
-                        <div class="description">
-                            <div class="ml-0 ml-md-3 ml-lg-3 pt-1 pb-1 col-12 col-lg-4">
-                                <h2 class="mb-2 text-white" data-aos="fade-up" data-aos-delay="300">近期练习</h2>
-                            </div>
-
-                        </div>
-                        <img class="kandy " src="./images/Showreel/Machine.jpg">
-                    </div>
-
-                </div>
-                <!-- <div class="swiper-scrollbar"></div> -->
-
-            </div>
-            <!-- 如果需要导航按钮 -->
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
-            <!-- 如果需要滚动条 -->
-
+    <section class="about section pt-0" style="z-index: 2;background-color: #1A181B;" id="about">
+        <div class="col-lg-12 col-12 text-center" style="position: relative;z-index: 2;top: 2vw; container-type: size;">
+            <h2 class="text-white" style="font-size: 5rem;" data-aos="fade-down" data-aos-delay="200"
+                data-aos-offset="500">KV</h2>
         </div>
-
-        <div class="container">
-            <div class="row">
-
-
-                <div class="mt-lg-0 mt-5 mb-5 mb-lg-0 mb-5 mb-lg-5 mb-md-4 col-lg-8 col-md-8 col-12 placeholder">
-                </div>
-                <div class="mt-lg-4 mt-5 mb-lg-0 mb-0 ml-lg-6 ml-md-8 ml-8 col-lg-4 col-md-4 col-12">
-                    <div class="team-info img-fluid">
-                        <h2 class="mb-2" data-aos="fade-up" data-aos-delay="300">插画 / 动态插画</h2>
-
-                        <p data-aos="fade-up" data-aos-delay="400">
-                            自幼学习画画，高二开始自学数字绘画，高考后进入计算机相关专业。虽没有经历过应试美术和科班教育的试炼，但<a style="font-weight:bold;"
-                                href="javascript:void(0);" data-aos-delay="400">基本功扎实</a></p>
-                        <p data-aos="fade-up" data-aos-delay="500">自大学期间开始接受国内外私人委托，广泛涉猎业界大佬的作品，不断尝试新的技法，作品的完成度不断迈向更高台阶。
-                        </p>
-
-
-                        <!-- <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow"
-                                href="https://www.tooplate.com/view/2119-gymso-fitness" target="_parent">Gymso Fitness HTML
-                                template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact"
-                                target="_parent">contact Tooplate</a> immediately. Thank you.</p> -->
-                    </div>
-
-
-                </div>
-                <!-- 
-                <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up"
-                    data-aos-delay="800">
-                    <div class="team-thumb">
-                        <img src="images/team/team-image01.jpg" class="img-fluid" alt="Trainer">
-
-                        <div class="team-info d-flex flex-column">
-
-                            <h3>Catherina</h3>
-                            <span>Body trainer</span>
-
-                            <ul class="social-icon mt-3">
-                                <li><a href="#" class="fa fa-instagram"></a></li>
-                                <li><a href="#" class="fa fa-facebook"></a></li>
-                            </ul>
+        <div class="showrell" style="top: 0;">
+            <div class="swiper-container-2 " data-aos="fade-down" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="my-slide">
+                        <div class="">
+                            <div class="class-thumb">
+                                <img src="./images/Showreel_2023/Gallery_V3_cc.jpg" class="canyonrender "
+                                    autoplay="autoplay" loop="loop" muted="muted"></img>
+                            </div>
                         </div>
                     </div>
-                </div> -->
-
+                    <div class="my-slide">
+                        <div class="">
+                            <div class="class-thumb">
+                                <img src="./images/Showreel_2023/Airport.jpg" class="canyonrender "
+                                    autoplay="autoplay" loop="loop" muted="muted"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
-    <!-- SCHEDULE -->
     <section class="schedule section" id="schedule">
         <div class="container">
             <div class="row">
@@ -693,7 +440,7 @@
                 <div class="col-lg-12 col-12 text-center">
 
                     <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">关于软件</h2>
-                    <h6 data-aos="fade-up">Blender AE PS 用的最多 也最熟悉</h6>
+                    <!-- <h6 data-aos="fade-up">Blender AE PS 用的最多 也最熟悉</h6> -->
 
                 </div>
 
@@ -703,7 +450,7 @@
                         <tbody>
                             <tr data-aos="fade-up" data-aos-delay="300">
                                 <td>
-                                    <h3>熟悉</h3>
+                                    <h3>天天用</h3>
 
                                 </td>
                                 <td>
@@ -716,15 +463,6 @@
                                     <span>After Effects</span>
                                 </td>
                                 <td>
-                                    <img src="images/Softwares/Substance_Painter_Icon.png" alt="">
-                                    <span>Substance</span>
-                                    <span>Painter</span>
-                                </td>
-                                <td>
-                                    <img src="images/Softwares/zBrush3.png" alt="">
-                                    <span>Zbrush</span>
-                                </td>
-                                <td>
                                     <img src="images/Softwares/Photoshop.png" alt="">
                                     <span>Photoshop</span>
                                 </td>
@@ -732,12 +470,47 @@
                                     <img src="images/Softwares/sai-icon.png" alt="">
                                     <span>Sai</span>
                                 </td>
+                                <td>
 
+                                </td>
                             </tr>
-
                             <tr data-aos="fade-up" data-aos-delay="400">
                                 <td>
+                                    <h3>熟悉</h3>
+
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/Substance_Designer_Icon.png" alt="">
+                                    <span>Substance</span>
+                                    <span>Designer</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/Substance_Painter_Icon.png" alt="">
+                                    <span>Substance</span>
+                                    <span>Painter</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/Unreal-symbol.png" alt="">
+                                    <span>Unreal</span>
+                                    <span>Engine</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/unity-logo-white.png" alt="">
+                                    <span>Unity</span>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/zBrush3.png" alt="">
+                                    <span>Zbrush</span>
+                                </td>
+                            </tr>
+                            <tr data-aos="fade-up" data-aos-delay="500">
+
+                                <td>
                                     <h3>偶尔一用</h3>
+                                </td>
+                                <td>
+                                    <img src="images/Softwares/Houdini_Icon.png" alt="">
+                                    <span>Houdini</span>
                                 </td>
                                 <td>
                                     <img src="images/Softwares/maya.png" alt="">
@@ -750,16 +523,6 @@
                                 <td>
                                     <img src="images/Softwares/MXN-C4D-icon.png" alt="">
                                     <span>C4D</span>
-                                </td>
-
-                                <td>
-                                    <img src="images/Softwares/Unreal-symbol.png" alt="">
-                                    <span>Unreal</span>
-                                    <span>Engine</span>
-                                </td>
-                                <td>
-                                    <img src="images/Softwares/unity-logo-white.png" alt="">
-                                    <span>Unity</span>
                                 </td>
                                 <td>
 
@@ -774,13 +537,21 @@
     </section>
 
 
+    <!-- CONTACT -->
+    <section class="contact section justify-content-center d-flex ">
+        <h2 id="start">可以插上游戏手柄测试这里的功能</h2>
+        <a href="https://github.com/luser/gamepadtest"><img
+                style="position: absolute; top: 0; right: 0; border: 0;display: none;"
+                src="./images/Showreel_2023/Motorcycle.png" alt="Fork me on GitHub"></a>
+    </section>
+
     <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
 
                 <div class="ml-auto col-lg-4 col-md-5">
-                    <p class="copyright-text">Copyright &copy; 2021 ShowE
+                    <p class="copyright-text">Copyright &copy; 2023 ShowE
 
                     </p>
                 </div>
@@ -798,26 +569,6 @@
         </div>
     </footer>
 
-    <!-- Modal -->
-    <!-- <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-
-            <div class="modal-content">
-                <div class="modal-header">
-
-                    <h2 class="modal-title" id="membershipFormLabel">Membership Form</h2>
-
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-footer"></div>
-
-            </div>
-        </div>
-    </div> -->
-
     <!-- SCRIPTS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -831,27 +582,13 @@
             slidesPerView: "auto",
             centeredSlides: true,
             autoplay: true,
-            // simulateTouch : false,
-            // mousewheel: true,
             observer: true,//修改swiper自己或子元素时，自动初始化swiper
             observeParents: true,//修改swiper的父元素时，自动初始化swiper
             releaseOnEdges: true,
             spaceBetween: 30,
-            // preventClicks : false,
             slideToClickedSlide: true,
             // loop: true, // 循环模式选项
             loop: false,
-
-            // // 如果需要分页器
-            // pagination: {
-            //     el: '.swiper-pagination',
-            // },
-
-            // // 如果需要前进后退按钮
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
             speed: 2000,
             lazyLoading: true,
             autoplay: {
@@ -863,9 +600,9 @@
                 el: '.swiper-scrollbar',
             },
         })
-        var mySwiper = new Swiper('.swiper-container2', {
+        var mySwiper2 = new Swiper('.swiper-container-2', {
             direction: 'horizontal', // 垂直切换选项
-            slidesPerView: "auto",
+            slidesPerView: 'auto',
             observer: true,//修改swiper自己或子元素时，自动初始化swiper
             observeParents: true,//修改swiper的父元素时，自动初始化swiper
             centeredSlides: true,
@@ -874,32 +611,193 @@
             lazyLoading: true,
             // simulateTouch : false,
             releaseOnEdges: true,
-            spaceBetween: 30,
+            spaceBetween: 0,
             // preventClicks : false,
             slideToClickedSlide: true,
             slideClass: 'my-slide',
-            loop: true, // 循环模式选项
             speed: 2000,
+            loop: true, // 循环模式选项
+
             autoplay: {
                 delay: 5000,//1秒切换一次
                 disableOnInteraction: false,
             },
-            // // 如果需要分页器
-            // pagination: {
-            //     el: '.swiper-pagination',
-            // },
-
-            // // 如果需要前进后退按钮
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
-
-            // 如果需要滚动条
         })
         // mySwiper.scrollbar.$dragEl.css('background', '#ff6600');
+        var mySwiper3 = new Swiper('.swiper-container-3', {
+            effect: "fade",
+            observer: true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true,//修改swiper的父元素时，自动初始化swiper
+            autoplay: true,
+            // mousewheel: true,
+            lazyLoading: true,
+            releaseOnEdges: true,
+            loop: true, // 循环模式选项
+            speed: 800,
+            autoplay: {
+                delay: 5000,//1秒切换一次
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        })
+        var mySwiper4 = new Swiper('.swiper-container-4', {
+            observer: true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true,//修改swiper的父元素时，自动初始化swiper
+
+            autoplay: true,
+            // mousewheel: true,
+            lazyLoading: true,
+            releaseOnEdges: true,
+            loop: true, // 循环模式选项
+            speed: 800,
+            autoplay: {
+                delay: 5000,//1秒切换一次
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        })
+        var mySwiper5 = new Swiper('.swiper-container-5', {
+            direction: 'horizontal', // 垂直切换选项
+            effect: "coverflow",
+            slidesPerView: "auto",
+            centeredSlides: true,
+            autoplay: true,
+            observer: true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true,//修改swiper的父元素时，自动初始化swiper
+            releaseOnEdges: true,
+            spaceBetween: 30,
+            slideToClickedSlide: true,
+            // loop: true, // 循环模式选项
+            loop: false,
+            speed: 2000,
+            lazyLoading: true,
+
+            autoplay: {
+                delay: 5000,//1秒切换一次
+                disableOnInteraction: false,
+            },
+        })
+        var haveEvents = 'GamepadEvent' in window;
+        var haveWebkitEvents = 'WebKitGamepadEvent' in window;
+        var controllers = {};
+        var rAF = window.mozRequestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.requestAnimationFrame;
+
+        function connecthandler(e) {
+            addgamepad(e.gamepad);
+        }
+        function addgamepad(gamepad) {
+            controllers[gamepad.index] = gamepad; var d = document.createElement("div");
+            d.setAttribute("id", "controller" + gamepad.index);
+            var t = document.createElement("h1");
+            t.appendChild(document.createTextNode("gamepad: " + gamepad.id));
+            d.appendChild(t);
+            var b = document.createElement("div");
+            b.className = "buttons";
+            for (var i = 0; i < gamepad.buttons.length; i++) {
+                var e = document.createElement("span");
+                e.className = "button";
+                //e.id = "b" + i;
+                e.innerHTML = i;
+                b.appendChild(e);
+            }
+            d.appendChild(b);
+            var a = document.createElement("div");
+            a.className = "axes";
+            for (i = 0; i < gamepad.axes.length; i++) {
+                e = document.createElement("meter");
+                e.className = "axis";
+                //e.id = "a" + i;
+                e.setAttribute("min", "-1");
+                e.setAttribute("max", "1");
+                e.setAttribute("value", "0");
+                e.innerHTML = i;
+                a.appendChild(e);
+            }
+            d.appendChild(a);
+            document.getElementById("start").style.display = "none";
+            document.body.appendChild(d);
+            rAF(updateStatus);
+        }
+
+        function disconnecthandler(e) {
+            removegamepad(e.gamepad);
+        }
+
+        function removegamepad(gamepad) {
+            var d = document.getElementById("controller" + gamepad.index);
+            document.body.removeChild(d);
+            delete controllers[gamepad.index];
+        }
+
+        function updateStatus() {
+            scangamepads();
+            for (j in controllers) {
+                var controller = controllers[j];
+                var d = document.getElementById("controller" + j);
+                var buttons = d.getElementsByClassName("button");
+                for (var i = 0; i < controller.buttons.length; i++) {
+                    var b = buttons[i];
+                    var val = controller.buttons[i];
+                    var pressed = val == 1.0;
+                    var touched = false;
+                    if (typeof (val) == "object") {
+                        pressed = val.pressed;
+                        if ('touched' in val) {
+                            touched = val.touched;
+                        }
+                        val = val.value;
+                    }
+                    var pct = Math.round(val * 100) + "%";
+                    b.style.backgroundSize = pct + " " + pct;
+                    b.className = "button";
+                    if (pressed) {
+                        b.className += " pressed";
+                    }
+                    if (touched) {
+                        b.className += " touched";
+                    }
+                }
+
+                var axes = d.getElementsByClassName("axis");
+                for (var i = 0; i < controller.axes.length; i++) {
+                    var a = axes[i];
+                    a.innerHTML = i + ": " + controller.axes[i].toFixed(4);
+                    a.setAttribute("value", controller.axes[i]);
+                }
+            }
+            rAF(updateStatus);
+        }
+
+        function scangamepads() {
+            var gamepads = navigator.getGamepads ? navigator.getGamepads() : (navigator.webkitGetGamepads ? navigator.webkitGetGamepads() : []);
+            for (var i = 0; i < gamepads.length; i++) {
+                if (gamepads[i] && (gamepads[i].index in controllers)) {
+                    controllers[gamepads[i].index] = gamepads[i];
+                }
+            }
+        }
+
+        if (haveEvents) {
+            window.addEventListener("gamepadconnected", connecthandler);
+            window.addEventListener("gamepaddisconnected", disconnecthandler);
+        } else if (haveWebkitEvents) {
+            window.addEventListener("webkitgamepadconnected", connecthandler);
+            window.addEventListener("webkitgamepaddisconnected", disconnecthandler);
+        } else {
+            setInterval(scangamepads, 500);
+        }
     </script>
 
-<script type="text/javascript" src="main.js"></script><script type="text/javascript" src="style.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="other.js"></script></body>
+<script type="text/javascript" src="commons~main.07cc63c04540ae6ddfc7.js"></script><script type="text/javascript" src="main.07cc63c04540ae6ddfc7.js"></script><script type="text/javascript" src="style.07cc63c04540ae6ddfc7.js"></script><script type="text/javascript" src="polyfills.07cc63c04540ae6ddfc7.js"></script><script type="text/javascript" src="bud.07cc63c04540ae6ddfc7.js"></script></body>
 
 </html>
